@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公司简介 - 中科国际顾问</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-placeholder">ZK</div>
+        <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-page="home" data-i18n="nav.home">首页</a>
+        <a href="about.html" data-page="about" class="active" data-i18n="nav.about">公司简介</a>
+        <a href="products.html" data-page="products" data-i18n="nav.products">产品中心</a>
+        <a href="product-detail.html" data-page="detail" data-i18n="nav.productDetail">产品详情</a>
+        <a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">视频图库</a>
+        <a href="contact.html" data-page="contact" data-i18n="nav.contact">联系我们</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag" data-i18n="nav.about">公司简介</span>
+      <h1 data-i18n="about.title">公司简介</h1>
+      <p data-i18n="about.subtitle">中科国际顾问（香港）有限公司是一家专注于智能太空舱产品研发与制造的国际企业。我们致力于将前沿科技与模块化建筑设计相结合，为全球客户提供高品质、可定制、快速部署的智慧太空舱解决方案。</p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="about.stat1">3+</div>
+          <div class="stat-label" data-i18n="about.stat1Label">产品系列</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="about.stat2">50+</div>
+          <div class="stat-label" data-i18n="about.stat2Label">功能模块</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="about.stat3">3</div>
+          <div class="stat-label" data-i18n="about.stat3Label">环境适配</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="about.stat4">全球</div>
+          <div class="stat-label" data-i18n="about.stat4Label">项目交付</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Visual -->
+  <section class="section" style="background:var(--bg-primary);padding-top:0;">
+    <div class="container">
+      <div class="product-visual" style="aspect-ratio:21/9;max-width:100%;">
+        <img src="assets/media/products/ZK01.png" alt="ZK01 Smart Capsule">
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Profile -->
+  <section class="section company-profile-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="about.companyProfileTag">公司资料</span>
+        <h2 data-i18n="about.companyProfileTitle">正式注册信息</h2>
+        <p data-i18n="about.companyProfileDesc">清晰的注册与联络信息，方便客户进行项目沟通、商务对接与资料核验。</p>
+      </div>
+
+      <div class="company-profile-grid reveal">
+        <div class="company-profile-card">
+          <span data-i18n="about.companyProfileNameLabel">公司名称</span>
+          <strong data-i18n="contact.companyValue">中科国际顾问（香港）有限公司</strong>
+        </div>
+        <div class="company-profile-card">
+          <span data-i18n="contact.registrationLabel">注册证号</span>
+          <strong data-i18n="contact.registrationNo">78386327</strong>
+        </div>
+        <div class="company-profile-card">
+          <span data-i18n="contact.contactPersonLabel">联系人</span>
+          <strong data-i18n="contact.contactPersonValue">杨涛峰</strong>
+        </div>
+        <div class="company-profile-card">
+          <span data-i18n="contact.phoneLabel">联系电话</span>
+          <strong><a href="tel:13319274381" data-i18n="contact.phonePlaceholder">13319274381</a></strong>
+        </div>
+        <div class="company-profile-card wide">
+          <span data-i18n="contact.addressLabel">地址</span>
+          <strong data-i18n="contact.addressPlaceholder">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section">
+    <div class="container" style="max-width:800px;text-align:center;">
+      <div class="divider"></div>
+      <h3 style="color:var(--accent-cyan);margin-bottom:16px;" data-i18n="about.sectionMission">企业使命</h3>
+      <p style="font-size:1.2rem;line-height:1.8;color:var(--text-secondary);" data-i18n="about.missionText">以创新科技为驱动力，打造适应多元环境的智能模块化空间产品，让高品质工作与生活空间触手可及。</p>
+    </div>
+  </section>
+
+  <!-- Core Strengths -->
+  <section class="section" style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="about.sectionVision">核心优势</span>
+        <h2 data-i18n="about.sectionVision">核心优势</h2>
+      </div>
+
+      <div class="values-grid reveal">
+        <div class="value-card tech-corner">
+          <h3 data-i18n="about.value1Title">定制化设计</h3>
+          <p data-i18n="about.value1Desc">根据客户需求和使用场景，提供从舱体尺寸、内部布局到功能配置的全面定制服务，确保每个项目精准匹配。</p>
+        </div>
+        <div class="value-card tech-corner">
+          <h3 data-i18n="about.value2Title">国际项目交付</h3>
+          <p data-i18n="about.value2Desc">具备跨国项目管理和物流能力，已为多个国家和地区提供产品与服务，熟悉国际标准与当地合规要求。</p>
+        </div>
+        <div class="value-card tech-corner">
+          <h3 data-i18n="about.value3Title">智能制造</h3>
+          <p data-i18n="about.value3Desc">采用先进制造工艺与严格品控体系，确保每一台太空舱都达到最高质量与耐用性标准。</p>
+        </div>
+        <div class="value-card tech-corner">
+          <h3 data-i18n="about.value4Title">全生命周期服务</h3>
+          <p data-i18n="about.value4Desc">从前期咨询、方案设计、生产制造，到运输安装、维护升级，提供端到端的一站式服务。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="text-align:center;">
+    <div class="container">
+      <div class="divider"></div>
+      <h2 style="margin-bottom:16px;" data-i18n="home.ctaContact">联系我们</h2>
+      <p style="color:var(--text-secondary);max-width:500px;margin:0 auto 32px;" data-i18n="contact.subtitle">如对我们的产品感兴趣，欢迎通过以下方式联系我们。</p>
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="home.ctaContact">联系我们</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-area" style="margin-bottom:12px;">
+            <div class="logo-placeholder">ZK</div>
+            <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+          </div>
+          <p data-i18n="footer.brandDesc">中科国际顾问（香港）有限公司 — 智慧太空舱产品制造商，专注定制化智能模块化舱体解决方案。</p>
+          <ul class="footer-meta">
+            <li><span data-i18n="footer.registrationLabel">注册证号</span><strong data-i18n="footer.registrationNo">78386327</strong></li>
+            <li><span data-i18n="footer.phoneLabel">联系电话</span><strong data-i18n="footer.phone">杨涛峰 13319274381</strong></li>
+            <li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.products">产品</h4>
+          <a href="products.html" data-i18n="footer.productCenter">产品中心</a>
+          <a href="products.html" data-i18n="footer.meetingCapsule">会议室舱</a>
+          <a href="products.html" data-i18n="footer.medicalCapsule">医疗舱</a>
+          <a href="products.html" data-i18n="footer.emergencyCapsule">综合应急舱</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">公司</h4>
+          <a href="about.html" data-i18n="footer.aboutUs">公司简介</a>
+          <a href="contact.html" data-i18n="footer.contactUs">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.resources">资源</h4>
+          <a href="gallery.html" data-i18n="footer.galleryLink">视频图库</a>
+          <a href="product-detail.html" data-i18n="footer.productDetailLink">产品详情</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 中科国际顾问（香港）有限公司 版权所有</span>
+        <span>Smart Capsule Technology</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

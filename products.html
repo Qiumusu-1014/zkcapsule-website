@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品中心 - 中科国际顾问</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-placeholder">ZK</div>
+        <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-page="home" data-i18n="nav.home">首页</a>
+        <a href="about.html" data-page="about" data-i18n="nav.about">公司简介</a>
+        <a href="products.html" data-page="products" class="active" data-i18n="nav.products">产品中心</a>
+        <a href="product-detail.html" data-page="detail" data-i18n="nav.productDetail">产品详情</a>
+        <a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">视频图库</a>
+        <a href="contact.html" data-page="contact" data-i18n="nav.contact">联系我们</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag" data-i18n="nav.products">产品中心</span>
+      <h1 data-i18n="products.title">产品中心</h1>
+      <p data-i18n="products.subtitle">探索我们的智能太空舱系列产品 — ZK01、ZK07、ZK08 与 ABAID 四个正式型号，覆盖会议、医疗、应急三大应用场景。</p>
+    </div>
+  </section>
+
+  <!-- Product Model Grid -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="products.lineupTitle">正式产品型号</span>
+        <h2 data-i18n="products.lineupTitle">正式产品型号</h2>
+        <p class="section-subtitle" style="margin:0 auto;" data-i18n="products.lineupSubtitle">每个型号保留一张正面主图，点击进入详情页查看更多产品图片与配置能力。</p>
+      </div>
+
+      <div class="product-lineup-grid reveal" id="productLineupGrid"></div>
+    </div>
+  </section>
+
+  <!-- Category Cards -->
+  <section class="section" style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="home.categoriesPreview">产品分类</span>
+        <h2 data-i18n="home.categoriesPreview">产品分类</h2>
+        <p class="section-subtitle" style="margin:0 auto;" data-i18n="products.categorySubtitle">功能分类与型号并行展示，客户可按会议、医疗、应急等场景定制组合。</p>
+      </div>
+
+      <div class="category-card-grid reveal">
+        <article class="category-summary-card future-card">
+          <div class="fc-icon icon-line">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="13" width="32" height="22" rx="4"></rect><path d="M15 35v5M33 35v5M16 21h16M16 27h10"></path></svg>
+          </div>
+          <span class="card-tag">Scenario 01</span>
+          <h3 data-i18n="products.catMeeting">会议室舱</h3>
+          <ul class="compact-feature-list">
+            <li data-i18n="products.meetingFeatures.0">远程会议系统</li>
+            <li data-i18n="products.meetingFeatures.2">会议大屏幕</li>
+            <li data-i18n="products.meetingFeatures.4">AI 实时翻译</li>
+          </ul>
+        </article>
+
+        <article class="category-summary-card future-card">
+          <div class="fc-icon icon-line">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v32M8 24h32"></path><rect x="10" y="10" width="28" height="28" rx="7"></rect></svg>
+          </div>
+          <span class="card-tag">Scenario 02</span>
+          <h3 data-i18n="products.catMedical">医疗舱</h3>
+          <ul class="compact-feature-list">
+            <li data-i18n="products.medicalFeatures.0">远程医疗诊断</li>
+            <li data-i18n="products.medicalFeatures.2">心电图测试</li>
+            <li data-i18n="products.medicalFeatures.5">AI 医疗辅助</li>
+          </ul>
+        </article>
+
+        <article class="category-summary-card future-card">
+          <div class="fc-icon icon-line">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l15 8v11c0 9-6 15-15 18-9-3-15-9-15-18V14l15-8z"></path><path d="M17 25h14M24 18v14"></path></svg>
+          </div>
+          <span class="card-tag">Scenario 03</span>
+          <h3 data-i18n="products.catEmergency">综合应急舱</h3>
+          <ul class="compact-feature-list">
+            <li data-i18n="products.emergencyFeatures.0">野外值守空间</li>
+            <li data-i18n="products.emergencyFeatures.1">临时指挥中心</li>
+            <li data-i18n="products.emergencyFeatures.4">能源管理系统</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Environment Badges -->
+      <div class="env-badges" style="margin-top:48px;">
+        <span class="env-badge" style="border-color:var(--accent-cyan);color:var(--accent-cyan);" data-i18n="home.envVersions">环境版本</span>
+        <span class="env-badge" data-i18n="products.envGrassland">草原版</span>
+        <span class="env-badge" data-i18n="products.envDesert">沙漠版</span>
+        <span class="env-badge" data-i18n="products.envMountain">低山区版</span>
+      </div>
+      <p style="text-align:center;color:var(--text-muted);font-size:0.85rem;margin-top:16px;" data-i18n="products.envDesc">三种环境版本可适配不同地形与气候条件</p>
+    </div>
+  </section>
+
+  <!-- Key Features Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="products.featuresTitle">重点功能</span>
+        <h2 data-i18n="products.featuresTitle">重点功能</h2>
+      </div>
+
+      <div class="feature-grid reveal">
+        <div class="feature-card">
+          <div class="fc-icon icon-line"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="18" r="6"></circle><path d="M24 5v4M24 27v4M11 18H7M41 18h-4M14.8 8.8l2.8 2.8M33.2 8.8l-2.8 2.8M10 37h28M14 32h20"></path></svg></div>
+          <h3 data-i18n="products.featureSolar">顶部太阳能板</h3>
+          <p data-i18n="products.featureSolarDesc">高效光伏面板，为舱体提供清洁、可再生的电力供应，支持离网独立运行。</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon icon-line"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l16 6v11c0 10-6.7 16.8-16 21-9.3-4.2-16-11-16-21V11l16-6z"></path><path d="M16 23h16M18 30h12M20 16h8"></path></svg></div>
+          <h3 data-i18n="products.featureInsulation">保温结构</h3>
+          <p data-i18n="products.featureInsulationDesc">多层复合保温墙体，有效隔绝外部极端温度，保持舱内舒适环境。</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon icon-line"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="4"></circle><path d="M24 5v14M24 29v14M5 24h14M29 24h14M10.6 10.6l9.9 9.9M27.5 27.5l9.9 9.9M37.4 10.6l-9.9 9.9M20.5 27.5l-9.9 9.9"></path></svg></div>
+          <h3 data-i18n="products.featureHvac">取暖与空调系统</h3>
+          <p data-i18n="products.featureHvacDesc">集成冷暖空调系统，支持 -30°C 至 50°C 宽温域运行，适应各类极端气候。</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon icon-line"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 31h24V15H6v16zM30 21h7l5 6v4H30V21z"></path><circle cx="16" cy="35" r="4"></circle><circle cx="36" cy="35" r="4"></circle><path d="M10 20h14M10 26h10"></path></svg></div>
+          <h3 data-i18n="products.featureDeploy">快速运输与部署</h3>
+          <p data-i18n="products.featureDeployDesc">标准化模块设计，支持集装箱运输与快速现场组装，最短数小时内完成部署。</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon icon-line"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="13" width="22" height="22" rx="5"></rect><path d="M24 5v8M24 35v8M5 24h8M35 24h8M18 24h12M24 18v12"></path></svg></div>
+          <h3 data-i18n="products.featureAI">AI 智能应用</h3>
+          <p data-i18n="products.featureAIDesc">集成 AI 翻译、AI 会议纪要、AI 医疗辅助等智能功能，全面提升舱体使用效率。</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon icon-line"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 34v8M16 42h16M13 28a15 15 0 0 1 22 0M7 21a24 24 0 0 1 34 0M19 35a7 7 0 0 1 10 0"></path></svg></div>
+          <h3 data-i18n="products.featureEmergency">应急救援</h3>
+          <p data-i18n="products.featureEmergencyDesc">配备应急通信、能源管理与急救设备，适用于野外值守、灾害响应等紧急场景。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--bg-primary);text-align:center;">
+    <div class="container">
+      <div class="divider"></div>
+      <h2 style="margin-bottom:16px;" data-i18n="home.ctaContact">联系我们</h2>
+      <p style="color:var(--text-secondary);max-width:500px;margin:0 auto 32px;" data-i18n="contact.subtitle">如对我们的产品感兴趣，欢迎通过以下方式联系我们。</p>
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="home.ctaContact">联系我们</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-area" style="margin-bottom:12px;">
+            <div class="logo-placeholder">ZK</div>
+            <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+          </div>
+          <p data-i18n="footer.brandDesc">中科国际顾问（香港）有限公司 — 智慧太空舱产品制造商，专注定制化智能模块化舱体解决方案。</p>
+          <ul class="footer-meta">
+            <li><span data-i18n="footer.registrationLabel">注册证号</span><strong data-i18n="footer.registrationNo">78386327</strong></li>
+            <li><span data-i18n="footer.phoneLabel">联系电话</span><strong data-i18n="footer.phone">杨涛峰 13319274381</strong></li>
+            <li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.products">产品</h4>
+          <a href="products.html" data-i18n="footer.productCenter">产品中心</a>
+          <a href="products.html" data-i18n="footer.meetingCapsule">会议室舱</a>
+          <a href="products.html" data-i18n="footer.medicalCapsule">医疗舱</a>
+          <a href="products.html" data-i18n="footer.emergencyCapsule">综合应急舱</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">公司</h4>
+          <a href="about.html" data-i18n="footer.aboutUs">公司简介</a>
+          <a href="contact.html" data-i18n="footer.contactUs">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.resources">资源</h4>
+          <a href="gallery.html" data-i18n="footer.galleryLink">视频图库</a>
+          <a href="product-detail.html" data-i18n="footer.productDetailLink">产品详情</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 中科国际顾问（香港）有限公司 版权所有</span>
+        <span>Smart Capsule Technology</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var grid = document.getElementById('productLineupGrid');
+      if (!grid || !window.ZK_PRODUCT_MODELS) return;
+
+      function renderLineup() {
+        grid.innerHTML = window.ZK_PRODUCT_MODELS.order.map(function (id, index) {
+          var model = window.ZK_PRODUCT_MODELS.items[id];
+          var title = ZK.t(model.titleKey);
+          var desc = ZK.t(model.descKey);
+          var detailUrl = 'product-detail.html?model=' + encodeURIComponent(id);
+          return [
+            '<a class="product-model-card future-card" href="' + detailUrl + '" style="--stagger:' + index + '">',
+              '<div class="product-model-media">',
+                '<img src="' + model.mainImage + '" alt="' + title + '" loading="lazy">',
+                '<span class="scan-line"></span>',
+              '</div>',
+              '<div class="product-model-body">',
+                '<span class="card-tag">' + model.series + '</span>',
+                '<h3>' + title + '</h3>',
+                '<p>' + desc + '</p>',
+                '<div class="product-model-footer">',
+                  '<strong>' + model.code + '</strong>',
+                  '<span>' + ZK.t('products.viewDetails') + '</span>',
+                '</div>',
+              '</div>',
+            '</a>'
+          ].join('');
+        }).join('');
+      }
+
+      renderLineup();
+      document.addEventListener('zk:langchange', renderLineup);
+    })();
+  </script>
+</body>
+</html>

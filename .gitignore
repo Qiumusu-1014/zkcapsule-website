@@ -1,0 +1,6 @@
+output/
+.cache/
+.DS_Store
+Thumbs.db
+*.log
+assets/media/video/ZK01.mp4

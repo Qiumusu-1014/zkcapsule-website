@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视频图库 - 中科国际顾问</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-placeholder">ZK</div>
+        <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-page="home" data-i18n="nav.home">首页</a>
+        <a href="about.html" data-page="about" data-i18n="nav.about">公司简介</a>
+        <a href="products.html" data-page="products" data-i18n="nav.products">产品中心</a>
+        <a href="product-detail.html" data-page="detail" data-i18n="nav.productDetail">产品详情</a>
+        <a href="gallery.html" data-page="gallery" class="active" data-i18n="nav.gallery">视频图库</a>
+        <a href="contact.html" data-page="contact" data-i18n="nav.contact">联系我们</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag" data-i18n="nav.gallery">视频图库</span>
+      <h1 data-i18n="gallery.title">视频图库</h1>
+      <p data-i18n="gallery.subtitle">观看产品视频，浏览工程图、三视图与场景效果图，全方位了解智慧太空舱。</p>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <!-- Product Video -->
+      <div style="margin-bottom:48px;">
+        <h3 style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+          <span style="width:8px;height:8px;background:var(--accent-cyan);border-radius:50%;display:inline-block;"></span>
+          <span data-i18n="gallery.videoTitle1">产品展示视频</span>
+        </h3>
+        <div class="video-wrapper">
+          <video id="video1" controls preload="metadata" playsinline style="width:100%;height:100%;">
+            <source src="assets/media/video/ZK01-web-20s.mp4" type="video/mp4">
+            <p data-i18n="gallery.videoTitle1">您的浏览器不支持视频播放</p>
+          </video>
+        </div>
+      </div>
+
+      <!-- ZK07 Video -->
+      <div style="margin-bottom:48px;">
+        <h3 style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+          <span style="width:8px;height:8px;background:var(--accent-gold);border-radius:50%;display:inline-block;"></span>
+          <span data-i18n="gallery.videoTitle3">ZK07 产品视频</span>
+        </h3>
+        <div class="video-wrapper">
+          <video id="video3" controls preload="metadata" playsinline style="width:100%;height:100%;">
+            <source src="assets/media/video/ZK07.mp4" type="video/mp4">
+            <p data-i18n="gallery.videoTitle3">您的浏览器不支持视频播放</p>
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Model Images -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="gallery.sectionProducts">正式产品型号图</span>
+        <h2 data-i18n="gallery.sectionProducts">正式产品型号图</h2>
+        <p class="section-subtitle" style="margin:0 auto;" data-i18n="gallery.sectionProductsDesc">ZK01、ZK07、ZK08 与 ABAID 四个正式型号的产品展示图。</p>
+      </div>
+
+      <div class="gallery-model-groups" id="galleryModelGroups"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-area" style="margin-bottom:12px;">
+            <div class="logo-placeholder">ZK</div>
+            <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+          </div>
+          <p data-i18n="footer.brandDesc">中科国际顾问（香港）有限公司 — 智慧太空舱产品制造商，专注定制化智能模块化舱体解决方案。</p>
+          <ul class="footer-meta">
+            <li><span data-i18n="footer.registrationLabel">注册证号</span><strong data-i18n="footer.registrationNo">78386327</strong></li>
+            <li><span data-i18n="footer.phoneLabel">联系电话</span><strong data-i18n="footer.phone">杨涛峰 13319274381</strong></li>
+            <li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.products">产品</h4>
+          <a href="products.html" data-i18n="footer.productCenter">产品中心</a>
+          <a href="products.html" data-i18n="footer.meetingCapsule">会议室舱</a>
+          <a href="products.html" data-i18n="footer.medicalCapsule">医疗舱</a>
+          <a href="products.html" data-i18n="footer.emergencyCapsule">综合应急舱</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">公司</h4>
+          <a href="about.html" data-i18n="footer.aboutUs">公司简介</a>
+          <a href="contact.html" data-i18n="footer.contactUs">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.resources">资源</h4>
+          <a href="gallery.html" data-i18n="footer.galleryLink">视频图库</a>
+          <a href="product-detail.html" data-i18n="footer.productDetailLink">产品详情</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 中科国际顾问（香港）有限公司 版权所有</span>
+        <span>Smart Capsule Technology</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var root = document.getElementById('galleryModelGroups');
+      if (!root || !window.ZK_PRODUCT_MODELS) return;
+
+      function renderGroups() {
+        root.innerHTML = window.ZK_PRODUCT_MODELS.order.map(function (id) {
+          var model = window.ZK_PRODUCT_MODELS.items[id];
+          var title = ZK.t(model.titleKey);
+          var images = [{
+            src: model.mainImage,
+            captionKey: model.mainCaptionKey
+          }].concat(model.detailImages);
+
+          var items = images.map(function (image, index) {
+            var caption = ZK.t(image.captionKey);
+            return [
+              '<button class="gallery-item future-card" type="button" data-lightbox="' + image.src + '" data-caption="' + title + ' - ' + caption + '" style="--stagger:' + index + '">',
+                '<img src="' + image.src + '" alt="' + title + ' - ' + caption + '" loading="lazy">',
+                '<span class="scan-line"></span>',
+                '<div class="gallery-caption">' + caption + '</div>',
+              '</button>'
+            ].join('');
+          }).join('');
+
+          return [
+            '<section class="gallery-model-group">',
+              '<div class="gallery-model-heading">',
+                '<span>' + model.series + '</span>',
+                '<h3>' + title + '</h3>',
+                '<a href="product-detail.html?model=' + id + '">' + ZK.t('products.viewDetails') + '</a>',
+              '</div>',
+              '<div class="gallery-grid">' + items + '</div>',
+            '</section>'
+          ].join('');
+        }).join('');
+      }
+
+      renderGroups();
+      document.addEventListener('zk:langchange', renderGroups);
+    })();
+  </script>
+</body>
+</html>

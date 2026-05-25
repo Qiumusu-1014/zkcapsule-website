@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中科国际顾问 - 智慧太空舱</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-placeholder">ZK</div>
+        <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-page="home" class="active" data-i18n="nav.home">首页</a>
+        <a href="about.html" data-page="about" data-i18n="nav.about">公司简介</a>
+        <a href="products.html" data-page="products" data-i18n="nav.products">产品中心</a>
+        <a href="product-detail.html" data-page="detail" data-i18n="nav.productDetail">产品详情</a>
+        <a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">视频图库</a>
+        <a href="contact.html" data-page="contact" data-i18n="nav.contact">联系我们</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <!-- Video background with fallback -->
+      <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="" data-max-duration="20">
+        <source src="assets/media/video/ZK01-web-20s.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="home.heroBadge">智慧太空舱 · 未来空间解决方案</div>
+      <h1>
+        <span data-i18n="home.companyName">中科国际顾问（香港）有限公司</span>
+        <span class="en-name" data-i18n="home.companyNameEn">Zhongke International Consultants (Hong Kong) Limited</span>
+      </h1>
+      <p class="hero-tagline" data-i18n="home.tagline">为全球客户提供定制化智能太空舱产品。从设计到交付，以未来科技重塑人类工作与生活空间。</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-primary btn-lg" data-i18n="home.ctaProducts">探索产品</a>
+        <a href="contact.html" class="btn btn-outline btn-lg" data-i18n="home.ctaContact">联系我们</a>
+      </div>
+      <div class="hero-models">
+        <div class="hero-model-badge">
+          <div class="model-name">ZK01</div>
+          <div class="model-sub" data-i18n="home.modelZK01Desc">多环境适配舱体</div>
+        </div>
+        <div class="hero-model-badge">
+          <div class="model-name">ZK07</div>
+          <div class="model-sub" data-i18n="home.modelZK07Desc">白色智慧舱体</div>
+        </div>
+        <div class="hero-model-badge">
+          <div class="model-name">ZK08</div>
+          <div class="model-sub" data-i18n="home.modelZK08Desc">医疗场景舱体</div>
+        </div>
+        <div class="hero-model-badge">
+          <div class="model-name">ABAID</div>
+          <div class="model-sub" data-i18n="home.modelABAIDDesc">高端定制舱体</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <section class="features-strip" aria-label="Smart capsule core systems">
+    <div class="features-shell">
+      <div class="features-heading">
+        <span data-i18n="home.featuresTitle">核心功能</span>
+        <strong data-i18n="home.featuresSystemLabel">核心系统</strong>
+      </div>
+      <div class="features-grid" id="featuresStrip">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Category Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="home.categoriesPreview">产品分类</span>
+        <h2 class="section-title" data-i18n="home.categoriesPreview">产品分类</h2>
+      </div>
+
+      <div class="grid-3">
+        <!-- Meeting Capsule -->
+        <a href="products.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-media">
+            <img src="assets/media/products/ZK07-1.png" alt="会议室舱参考图">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">01</span>
+            <h3 class="card-title" data-i18n="home.catMeetingTitle">会议室舱</h3>
+            <p class="card-desc" data-i18n="home.catMeetingDesc">远程会议、远程教育、会议大屏幕、摄像头麦克风音响、AI 翻译、AI 会议纪要</p>
+          </div>
+        </a>
+
+        <!-- Medical Capsule -->
+        <a href="products.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-media">
+            <img src="assets/media/products/ZK08.png" alt="医疗舱参考图">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">02</span>
+            <h3 class="card-title" data-i18n="home.catMedicalTitle">医疗舱</h3>
+            <p class="card-desc" data-i18n="home.catMedicalDesc">远程医疗诊断、基础体检、心电图测试、急救设备、医疗储物、AI 医疗辅助、卫生间</p>
+          </div>
+        </a>
+
+        <!-- Emergency Capsule -->
+        <a href="products.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-media">
+            <img src="assets/media/products/ZK01-1.png" alt="综合应急舱参考图">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">03</span>
+            <h3 class="card-title" data-i18n="home.catEmergencyTitle">综合应急舱</h3>
+            <p class="card-desc" data-i18n="home.catEmergencyDesc">野外值守、临时指挥、应急通信、休息区、能源管理、卫生间、储物空间</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Environment Badges -->
+      <div class="env-badges" style="margin-top:48px;">
+        <span class="env-badge" data-i18n="home.envVersions">环境版本</span>
+        <span class="env-badge" data-i18n="products.envGrassland">草原版</span>
+        <span class="env-badge" data-i18n="products.envDesert">沙漠版</span>
+        <span class="env-badge" data-i18n="products.envMountain">低山区版</span>
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <a href="products.html" class="btn btn-outline" data-i18n="home.viewAllProducts">查看全部产品</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Model Showcase -->
+  <section class="section" style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="home.modelsTitle">产品型号</span>
+        <h2 class="section-title" data-i18n="home.modelsTitle">产品型号</h2>
+        <p class="section-subtitle" style="margin:0 auto;" data-i18n="home.modelsSubtitle">ZK 系列与 ABAID 系列共同覆盖多环境部署、高端定制与专业应用场景。</p>
+      </div>
+
+      <div class="model-card-grid reveal">
+        <a href="product-detail.html?model=zk01" class="card model-card future-card">
+          <div class="card-media model-media">
+            <img src="assets/media/products/ZK01.png" alt="ZK01 Smart Capsule">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">ZK Series</span>
+            <h3 class="card-title" data-i18n="products.modelZK01">ZK01 Smart Capsule</h3>
+            <p class="card-desc" data-i18n="products.modelZK01Desc">多环境适配智慧太空舱，展示草原、沙漠、低山区场景，支持太阳能与快速部署。</p>
+          </div>
+        </a>
+
+        <a href="product-detail.html?model=zk07" class="card model-card future-card">
+          <div class="card-media model-media">
+            <img src="assets/media/products/ZK07.png" alt="ZK07 Smart Capsule">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">ZK Series</span>
+            <h3 class="card-title" data-i18n="products.modelZK07">ZK07 Smart Capsule</h3>
+            <p class="card-desc" data-i18n="products.modelZK07Desc">白色智慧太空舱，顶部太阳能板与大面玻璃立面，适合高端旅居、会议与综合应用。</p>
+          </div>
+        </a>
+
+        <a href="product-detail.html?model=zk08" class="card model-card future-card">
+          <div class="card-media model-media">
+            <img src="assets/media/products/ZK08.png" alt="ZK08 Smart Capsule">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">ZK Series</span>
+            <h3 class="card-title" data-i18n="products.modelZK08">ZK08 Smart Capsule</h3>
+            <p class="card-desc" data-i18n="products.modelZK08Desc">医疗场景智慧太空舱，面向远程医疗、体检与应急服务点。</p>
+          </div>
+        </a>
+
+        <a href="product-detail.html?model=abaid" class="card model-card future-card">
+          <div class="card-media model-media">
+            <img src="assets/media/products/ABAID-1.png" alt="ABAID Smart Capsule">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">ABAID Series</span>
+            <h3 class="card-title" data-i18n="products.modelABAID">ABAID Smart Capsule</h3>
+            <p class="card-desc" data-i18n="products.modelABAIDDesc">高端定制智慧太空舱</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background:var(--bg-primary);text-align:center;">
+    <div class="container">
+      <div class="divider"></div>
+      <h2 style="margin-bottom:16px;" data-i18n="home.ctaContact">联系我们</h2>
+      <p style="color:var(--text-secondary);max-width:500px;margin:0 auto 32px;" data-i18n="contact.subtitle">如对我们的产品感兴趣，欢迎通过以下方式联系我们。</p>
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="home.ctaContact">联系我们</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-area" style="margin-bottom:12px;">
+            <div class="logo-placeholder">ZK</div>
+            <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
+          </div>
+          <p data-i18n="footer.brandDesc">中科国际顾问（香港）有限公司 — 智慧太空舱产品制造商，专注定制化智能模块化舱体解决方案。</p>
+          <ul class="footer-meta">
+            <li><span data-i18n="footer.registrationLabel">注册证号</span><strong data-i18n="footer.registrationNo">78386327</strong></li>
+            <li><span data-i18n="footer.phoneLabel">联系电话</span><strong data-i18n="footer.phone">杨涛峰 13319274381</strong></li>
+            <li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.products">产品</h4>
+          <a href="products.html" data-i18n="footer.productCenter">产品中心</a>
+          <a href="products.html" data-i18n="footer.meetingCapsule">会议室舱</a>
+          <a href="products.html" data-i18n="footer.medicalCapsule">医疗舱</a>
+          <a href="products.html" data-i18n="footer.emergencyCapsule">综合应急舱</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">公司</h4>
+          <a href="about.html" data-i18n="footer.aboutUs">公司简介</a>
+          <a href="contact.html" data-i18n="footer.contactUs">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.resources">资源</h4>
+          <a href="gallery.html" data-i18n="footer.galleryLink">视频图库</a>
+          <a href="product-detail.html" data-i18n="footer.productDetailLink">产品详情</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 中科国际顾问（香港）有限公司 版权所有</span>
+        <span>Smart Capsule Technology</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Populate features strip dynamically
+    (function() {
+      var grid = document.getElementById('featuresStrip');
+      if (!grid) return;
+      var features = I18N[ZK.lang()].home.features;
+      var meta = [
+        {
+          code: 'CORE 01',
+          icon: '<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="18" r="6"></circle><path d="M24 5v4M24 27v4M11 18H7M41 18h-4M14.8 8.8l2.8 2.8M33.2 8.8l-2.8 2.8M10 37h28M14 32h20"></path></svg>'
+        },
+        {
+          code: 'CORE 02',
+          icon: '<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l16 6v11c0 10-6.7 16.8-16 21-9.3-4.2-16-11-16-21V11l16-6z"></path><path d="M16 23h16M18 30h12M20 16h8"></path></svg>'
+        },
+        {
+          code: 'CORE 03',
+          icon: '<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M26 5c6 7 2 11 8 17 3 3 4 7 2 12-2.2 5.2-7.4 8-12 8-7.5 0-13-5-13-12 0-5.4 3.1-9.2 7-13-.5 4.5 1.6 7.2 4.8 8-2.2-7 .6-13.2 3.2-20z"></path></svg>'
+        },
+        {
+          code: 'CORE 04',
+          icon: '<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="4"></circle><path d="M24 5v14M24 29v14M5 24h14M29 24h14M10.6 10.6l9.9 9.9M27.5 27.5l9.9 9.9M37.4 10.6l-9.9 9.9M20.5 27.5l-9.9 9.9"></path></svg>'
+        },
+        {
+          code: 'CORE 05',
+          icon: '<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 31h24V15H6v16zM30 21h7l5 6v4H30V21z"></path><circle cx="16" cy="35" r="4"></circle><circle cx="36" cy="35" r="4"></circle><path d="M10 20h14M10 26h10"></path></svg>'
+        },
+        {
+          code: 'CORE 06',
+          icon: '<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="13" width="22" height="22" rx="5"></rect><path d="M24 5v8M24 35v8M5 24h8M35 24h8M18 24h12M24 18v12"></path></svg>'
+        }
+      ];
+      var html = '';
+      features.forEach(function(f, i) {
+        var item = meta[i];
+        html += '<div class="feature-item"><div class="feature-item-head"><span class="feature-code">' + item.code + '</span><span class="feature-line"></span></div><div class="feature-icon">' + item.icon + '</div><div class="feature-label">' + f + '</div></div>';
+      });
+      grid.innerHTML = html;
+
+      // Re-render on language change
+      var origToggle = window.ZK.toggleLang;
+      window.ZK.toggleLang = function() {
+        origToggle();
+        var features2 = I18N[ZK.lang()].home.features;
+        var labels = grid.querySelectorAll('.feature-label');
+        features2.forEach(function(f, i) {
+          if (labels[i]) labels[i].textContent = f;
+        });
+      };
+    })();
+  </script>
+</body>
+</html>
