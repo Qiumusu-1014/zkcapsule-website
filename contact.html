@@ -1,196 +1,137 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>联系我们 - 中科国际顾问</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="联系中科国际顾问，提交ZK系列模块化智能太空舱项目需求。">
+  <title>联系我们 - 中科国际顾问 - 智慧太空舱</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div data-site-header></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">PROJECT INQUIRY</span>
+        <h1 data-i18n="contact.title">联系我们</h1>
+        <p data-i18n="contact.subtitle">提交您的项目方向与意向型号，我们将据此推进产品选型与方案沟通。</p>
+      </div>
+    </section>
 
-  <header class="site-header" id="siteHeader">
-    <div class="header-inner">
-      <a href="index.html" class="logo-area">
-        <div class="logo-placeholder">ZK</div>
-        <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html" data-page="home" data-i18n="nav.home">首页</a>
-        <a href="about.html" data-page="about" data-i18n="nav.about">公司简介</a>
-        <a href="products.html" data-page="products" data-i18n="nav.products">产品中心</a>
-        <a href="product-detail.html" data-page="detail" data-i18n="nav.productDetail">产品详情</a>
-        <a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">视频图库</a>
-        <a href="contact.html" data-page="contact" class="active" data-i18n="nav.contact">联系我们</a>
-        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
-      </nav>
-    </div>
-  </header>
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-info-cards reveal">
+          <article class="direct-contact-card">
+            <span class="section-tag" data-i18n="contact.directTag">项目咨询</span>
+            <h2 data-i18n="contact.contactPersonValue">杨涛峰</h2>
+            <a class="direct-phone" href="tel:13319274381" data-i18n="contact.phoneValue">13319274381</a>
+            <p data-i18n="contact.directNote">产品选型、项目合作与定制需求可直接电话联系。</p>
+          </article>
+          <article class="contact-card">
+            <h3 data-i18n="contact.companyLabel">公司名称</h3>
+            <p data-i18n="contact.companyValue">中科国际顾问（香港）有限公司</p>
+          </article>
+          <article class="contact-card">
+            <h3 data-i18n="contact.addressLabel">地址</h3>
+            <p data-i18n="contact.addressValue">香港尖沙咀麼地道75号南洋中心2座7楼703室</p>
+          </article>
+          <article class="contact-card">
+            <h3 data-i18n="contact.registrationLabel">注册证号</h3>
+            <p data-i18n="contact.registrationNo">78386327</p>
+          </article>
+        </aside>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="container">
-      <span class="section-tag" data-i18n="nav.contact">联系我们</span>
-      <h1 data-i18n="contact.title">联系我们</h1>
-      <p data-i18n="contact.subtitle">如对我们的产品感兴趣，欢迎通过以下方式联系我们。我们将尽快回复您的咨询。</p>
-    </div>
-  </section>
-
-  <!-- Contact Layout -->
-  <section class="section" style="padding-top:0;">
-    <div class="container">
-      <div class="contact-layout">
-        <!-- Left: Contact Info -->
-        <div class="contact-info-cards">
-          <div class="contact-card">
-            <div class="cc-icon">HK</div>
-            <div>
-              <h4 data-i18n="contact.companyLabel">公司名称</h4>
-              <p data-i18n="contact.companyValue">中科国际顾问（香港）有限公司</p>
+        <section class="contact-form-area reveal">
+          <h2 data-i18n="contact.formTitle">提交项目需求</h2>
+          <form id="inquiryForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" data-i18n="contact.formName">姓名</label>
+                <input id="name" name="name" required data-i18n-placeholder="contact.formNamePlaceholder" placeholder="请输入您的姓名">
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="contact.formPhone">联系电话</label>
+                <input id="phone" name="phone" type="tel" required data-i18n-placeholder="contact.formPhonePlaceholder" placeholder="请输入联系电话">
+              </div>
+              <div class="form-group">
+                <label for="company" data-i18n="contact.formCompany">公司</label>
+                <input id="company" name="company" data-i18n-placeholder="contact.formCompanyPlaceholder" placeholder="请输入您的公司名称">
+              </div>
+              <div class="form-group">
+                <label for="region" data-i18n="contact.formRegion">项目地区</label>
+                <input id="region" name="region" data-i18n-placeholder="contact.formRegionPlaceholder" placeholder="请输入项目所在地区">
+              </div>
+              <div class="form-group">
+                <label for="productSelect" data-i18n="contact.formInterest">意向型号</label>
+                <select id="productSelect" name="product"></select>
+              </div>
+              <div class="form-group">
+                <label for="scenarioSelect" data-i18n="contact.formScenario">应用场景</label>
+                <select id="scenarioSelect" name="scenario"></select>
+              </div>
+              <div class="form-group full">
+                <label for="message" data-i18n="contact.formMessage">项目说明</label>
+                <textarea id="message" name="message" data-i18n-placeholder="contact.formMessagePlaceholder" placeholder="请描述使用场景、功能需求或预计部署规模..."></textarea>
+              </div>
             </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="cc-icon">ID</div>
-            <div>
-              <h4 data-i18n="contact.contactPersonLabel">联系人</h4>
-              <p data-i18n="contact.contactPersonValue">杨涛峰</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="cc-icon">☎</div>
-            <div>
-              <h4 data-i18n="contact.phoneLabel">联系电话</h4>
-              <p><a href="tel:13319274381" data-i18n="contact.phonePlaceholder">13319274381</a></p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="cc-icon">BR</div>
-            <div>
-              <h4 data-i18n="contact.registrationLabel">注册证号</h4>
-              <p data-i18n="contact.registrationNo">78386327</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="cc-icon">⌖</div>
-            <div>
-              <h4 data-i18n="contact.addressLabel">地址</h4>
-              <p data-i18n="contact.addressPlaceholder">香港尖沙咀麼地道75号南洋中心2座7楼703室</p>
-            </div>
-          </div>
-
-          <div class="direct-contact-card">
-            <span data-i18n="contact.directTag">快速咨询</span>
-            <p data-i18n="contact.directNote">产品选型、项目合作、定制方案可直接电话联系。</p>
-          </div>
-        </div>
-
-        <!-- Right: Contact Form -->
-        <div class="contact-form-area">
-          <h3 style="margin-bottom:24px;" data-i18n="contact.formTitle">发送咨询</h3>
-
-          <form id="contactForm" onsubmit="handleSubmit(event)">
-            <div class="form-group">
-              <label data-i18n="contact.formName">姓名</label>
-              <input type="text" data-i18n-placeholder="contact.formNamePlaceholder" placeholder="请输入您的姓名" required>
-            </div>
-
-            <div class="form-group">
-              <label data-i18n="contact.formEmail">邮箱</label>
-              <input type="email" data-i18n-placeholder="contact.formEmailPlaceholder" placeholder="请输入您的邮箱" required>
-            </div>
-
-            <div class="form-group">
-              <label data-i18n="contact.formCompany">公司</label>
-              <input type="text" data-i18n-placeholder="contact.formCompanyPlaceholder" placeholder="请输入您的公司名称">
-            </div>
-
-            <div class="form-group">
-              <label data-i18n="contact.formInterest">感兴趣的产品</label>
-              <select data-i18n-options="contact.formInterestOption">
-                <option data-i18n="contact.formInterestOption1">ZK01 Smart Capsule</option>
-                <option data-i18n="contact.formInterestOption2">ZK07 Smart Capsule</option>
-                <option data-i18n="contact.formInterestOption3">ZK08 Smart Capsule</option>
-                <option data-i18n="contact.formInterestOption4">ABAID Smart Capsule</option>
-                <option data-i18n="contact.formInterestOption5">会议室舱</option>
-                <option data-i18n="contact.formInterestOption6">医疗舱</option>
-                <option data-i18n="contact.formInterestOption7">综合应急舱</option>
-                <option data-i18n="contact.formInterestOption8">其他 / 定制需求</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label data-i18n="contact.formMessage">留言</label>
-              <textarea data-i18n-placeholder="contact.formMessagePlaceholder" placeholder="请描述您的需求或问题..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact.formSubmit">提交咨询</button>
-
-            <p style="font-size:0.75rem;color:var(--text-muted);margin-top:14px;text-align:center;" data-i18n="contact.formNote">提交即表示您同意我们根据隐私政策处理您的信息。</p>
+            <button class="btn btn-primary" type="submit" data-i18n="contact.formSubmit">提交咨询</button>
+            <p class="form-note" data-i18n="contact.formNote">具体配置、运输安装、审批及商务条款将在项目沟通阶段确认。</p>
           </form>
-        </div>
+        </section>
       </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo-area" style="margin-bottom:12px;">
-            <div class="logo-placeholder">ZK</div>
-            <span class="logo-text">中科国际顾问<small>Zhongke International</small></span>
-          </div>
-          <p data-i18n="footer.brandDesc">中科国际顾问（香港）有限公司 — 智慧太空舱产品制造商，专注定制化智能模块化舱体解决方案。</p>
-          <ul class="footer-meta">
-            <li><span data-i18n="footer.registrationLabel">注册证号</span><strong data-i18n="footer.registrationNo">78386327</strong></li>
-            <li><span data-i18n="footer.phoneLabel">联系电话</span><strong data-i18n="footer.phone">杨涛峰 13319274381</strong></li>
-            <li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.products">产品</h4>
-          <a href="products.html" data-i18n="footer.productCenter">产品中心</a>
-          <a href="products.html" data-i18n="footer.meetingCapsule">会议室舱</a>
-          <a href="products.html" data-i18n="footer.medicalCapsule">医疗舱</a>
-          <a href="products.html" data-i18n="footer.emergencyCapsule">综合应急舱</a>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.company">公司</h4>
-          <a href="about.html" data-i18n="footer.aboutUs">公司简介</a>
-          <a href="contact.html" data-i18n="footer.contactUs">联系我们</a>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.resources">资源</h4>
-          <a href="gallery.html" data-i18n="footer.galleryLink">视频图库</a>
-          <a href="product-detail.html" data-i18n="footer.productDetailLink">产品详情</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2026 中科国际顾问（香港）有限公司 版权所有</span>
-        <span>Smart Capsule Technology</span>
-      </div>
-    </div>
-  </footer>
-
+    </section>
+  </main>
+  <div data-site-footer></div>
   <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/site-components.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      var msg = ZK.lang() === 'zh'
-        ? '感谢您的咨询！我们将尽快与您联系。'
-        : 'Thank you for your inquiry! We will contact you soon.';
-      alert(msg);
-      e.target.reset();
-    }
+    (function () {
+      'use strict';
+      var query = new URLSearchParams(window.location.search);
+      var initialModel = query.get('model') || '';
+      var initialScenario = query.get('scenario') || '';
+      var scenarios = [
+        { value: 'stay', key: 'contact.scenarioStay' },
+        { value: 'education', key: 'contact.scenarioEducation' },
+        { value: 'medical', key: 'contact.scenarioMedical' },
+        { value: 'commercial', key: 'contact.scenarioCommercial' },
+        { value: 'emergency', key: 'contact.scenarioEmergency' },
+        { value: 'flagship', key: 'contact.scenarioFlagship' }
+      ];
+
+      function renderSelects() {
+        var catalog = window.ZK_PRODUCT_MODELS;
+        var product = document.getElementById('productSelect');
+        var scenario = document.getElementById('scenarioSelect');
+        var productValue = product.value || initialModel;
+        var scenarioValue = scenario.value || initialScenario;
+        product.innerHTML = '<option value="">' + ZK.t('contact.selectProduct') + '</option>' + catalog.order.map(function (id) {
+          var item = catalog.items[id];
+          return '<option value="' + id + '">' + item.code + ' ' + ZK.t(item.nameKey) + '</option>';
+        }).join('');
+        scenario.innerHTML = '<option value="">' + ZK.t('contact.selectScenario') + '</option>' + scenarios.map(function (item) {
+          return '<option value="' + item.value + '">' + ZK.t(item.key) + '</option>';
+        }).join('');
+        if (catalog.items[productValue]) product.value = productValue;
+        if (scenarios.some(function (item) { return item.value === scenarioValue; })) scenario.value = scenarioValue;
+        initialModel = '';
+        initialScenario = '';
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        renderSelects();
+        document.getElementById('inquiryForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          window.alert(ZK.t('contact.thanks'));
+        });
+      });
+      document.addEventListener('zk:langchange', renderSelects);
+    })();
   </script>
 </body>
 </html>

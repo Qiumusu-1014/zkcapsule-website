@@ -16,6 +16,8 @@
   if (/about/.test(path)) pageName = 'about';
   else if (/product-detail/.test(path)) pageName = 'detail';
   else if (/products/.test(path)) pageName = 'products';
+  else if (/solutions/.test(path)) pageName = 'solutions';
+  else if (/zk06/.test(path)) pageName = 'zk06';
   else if (/gallery/.test(path)) pageName = 'gallery';
   else if (/contact/.test(path)) pageName = 'contact';
 
@@ -79,7 +81,9 @@
       about: currentLang === 'zh' ? '公司简介' : 'About Us',
       products: currentLang === 'zh' ? '产品中心' : 'Products',
       detail: currentLang === 'zh' ? '产品详情' : 'Product Details',
-      gallery: currentLang === 'zh' ? '视频图库' : 'Gallery',
+      solutions: currentLang === 'zh' ? '场景方案' : 'Solutions',
+      zk06: currentLang === 'zh' ? 'ZK06 专题' : 'ZK06 Feature',
+      gallery: currentLang === 'zh' ? '产品影像' : 'Media',
       contact: currentLang === 'zh' ? '联系我们' : 'Contact Us'
     };
     var pt = pageTitles[pageName] || '';
@@ -92,7 +96,8 @@
     document.querySelectorAll('.nav-links a').forEach(function (link) {
       link.classList.remove('active');
     });
-    var activeLink = document.querySelector('.nav-links a[data-page="' + pageName + '"]');
+    var activePage = pageName === 'detail' ? 'products' : pageName;
+    var activeLink = document.querySelector('.nav-links a[data-page="' + activePage + '"]');
     if (activeLink) activeLink.classList.add('active');
   }
 

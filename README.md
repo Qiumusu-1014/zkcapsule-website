@@ -12,10 +12,8 @@ Company product showcase website for Zhongke International Consultants (Hong Kon
 
 ## Product Models
 
-- ZK01 Smart Capsule
-- ZK07 Smart Capsule
-- ZK08 Smart Capsule
-- ABAID Smart Capsule
+- ZK01-ZK09 Smart Capsule Series
+- Featured model: ZK06 Stackable Resort Suite Capsule
 
 ## Pages
 
@@ -23,9 +21,11 @@ Company product showcase website for Zhongke International Consultants (Hong Kon
 - About
 - Products
 - Product Details
-- Video & Image Gallery
+- Solutions
+- ZK06 Feature
+- Product Media
 - Contact
 
 ## Notes
 
-This is a static bilingual website built with HTML, CSS, and JavaScript. Visual and video references are limited to the approved product reference folder materials; legacy visuals from the previous space-capsule working folder are not used.
+This is a static bilingual website built with HTML, CSS, and JavaScript. It does not publish pricing or unconfirmed engineering specifications. Visual and video references are limited to confirmed product materials.
