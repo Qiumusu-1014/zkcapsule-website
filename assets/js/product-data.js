@@ -9,6 +9,8 @@
       captionKey: 'detail.structureCaption'
     },
     interiorShowcase: [
+      { kind: 'interior', code: 'ZK01', src: 'assets/media/products/ZK01-interior-generated.webp', captionKey: 'gallery.imgZK01InteriorGenerated' },
+      { kind: 'interior', code: 'ZK02', src: 'assets/media/products/ZK02-interior-generated.webp', captionKey: 'gallery.imgZK02InteriorGenerated' },
       { kind: 'interior', code: 'ZK03', src: 'assets/media/products/ZK03-interior-education.webp', captionKey: 'gallery.imgZK03Education' },
       { kind: 'interior', code: 'ZK03', src: 'assets/media/products/ZK03-interior-meeting.webp', captionKey: 'gallery.imgZK03Meeting' },
       { kind: 'interior', code: 'ZK04', src: 'assets/media/products/ZK04-interior.webp', captionKey: 'gallery.imgZK04Interior' },
@@ -18,6 +20,12 @@
       { kind: 'interior', code: 'ZK06', src: 'assets/media/products/ZK06-interior-lounge.webp', captionKey: 'gallery.imgZK06InteriorLounge' },
       { kind: 'interior', code: 'ZK06', src: 'assets/media/products/ZK06-interior-bedroom.webp', captionKey: 'gallery.imgZK06InteriorBedroom' },
       { kind: 'interior', code: 'ZK06', src: 'assets/media/products/ZK06-interior-suite.webp', captionKey: 'gallery.imgZK06InteriorSuite' },
+      { kind: 'interior', code: 'ZK07', src: 'assets/media/products/ZK07-interior-generated.webp', captionKey: 'gallery.imgZK07InteriorGenerated' },
+      { kind: 'interior', code: 'ZK08', src: 'assets/media/products/ZK08-interior-generated.webp', captionKey: 'gallery.imgZK08InteriorGenerated' },
+      { kind: 'interior', code: 'ABADI', src: 'assets/media/products/ABADI-interior-generated.webp', captionKey: 'gallery.imgABADIInteriorGenerated' },
+      { kind: 'layout', code: 'ZK01', src: 'assets/media/products/ZK01-layout-generated.webp', captionKey: 'gallery.imgZK01LayoutGenerated' },
+      { kind: 'layout', code: 'ZK02', src: 'assets/media/products/ZK02-layout-generated.webp', captionKey: 'gallery.imgZK02LayoutGenerated' },
+      { kind: 'layout', code: 'ZK03', src: 'assets/media/products/ZK03-layout-generated.webp', captionKey: 'gallery.imgZK03LayoutGenerated' },
       { kind: 'layout', code: 'ZK09', src: 'assets/media/products/ZK09-interior-01.webp', captionKey: 'gallery.imgZK09Interior1' },
       { kind: 'layout', code: 'ZK09', src: 'assets/media/products/ZK09-interior-02.webp', captionKey: 'gallery.imgZK09Interior2' },
       { kind: 'layout', code: 'ZK04', src: 'assets/media/products/ZK04-interior-layout.webp', captionKey: 'gallery.imgZK04Layout' },
@@ -26,8 +34,11 @@
       { kind: 'layout', code: 'ZK05', src: 'assets/media/products/ZK05-layout-03.webp', captionKey: 'gallery.imgZK05Layout3' },
       { kind: 'layout', code: 'ZK06', src: 'assets/media/products/ZK06-layout.webp', captionKey: 'gallery.imgZK06Layout' },
       { kind: 'layout', code: 'ZK06', src: 'assets/media/products/ZK06-layout-option-c.webp', captionKey: 'gallery.imgZK06LayoutOptionC' },
+      { kind: 'layout', code: 'ZK07', src: 'assets/media/products/ZK07-layout-generated.webp', captionKey: 'gallery.imgZK07LayoutGenerated' },
+      { kind: 'layout', code: 'ZK08', src: 'assets/media/products/ZK08-layout-generated.webp', captionKey: 'gallery.imgZK08LayoutGenerated' },
       { kind: 'layout', code: 'ZK09', src: 'assets/media/products/ZK09-layout-01.webp', captionKey: 'gallery.imgZK09Layout1' },
       { kind: 'layout', code: 'ZK09', src: 'assets/media/products/ZK09-layout-02.webp', captionKey: 'gallery.imgZK09Layout2' },
+      { kind: 'layout', code: 'ABADI', src: 'assets/media/products/ABADI-layout-generated.webp', captionKey: 'gallery.imgABADILayoutGenerated' },
       { kind: 'structure', code: 'SERIES', src: 'assets/media/products/structure-exploded.webp', captionKey: 'detail.structureCaption' }
     ],
     categories: {
@@ -53,14 +64,19 @@
         image: 'assets/media/products/ZK01-exterior.webp',
         gallery: [
           { src: 'assets/media/products/ZK01-exterior.webp', captionKey: 'gallery.imgZK01Exterior' },
-          { src: 'assets/media/products/ZK01-main.webp', captionKey: 'gallery.imgZK01' }
+          { src: 'assets/media/products/ZK01-main.webp', captionKey: 'gallery.imgZK01' },
+          { src: 'assets/media/products/ZK01-interior-generated.webp', captionKey: 'gallery.imgZK01InteriorGenerated' },
+          { src: 'assets/media/products/ZK01-layout-generated.webp', captionKey: 'gallery.imgZK01LayoutGenerated', kind: 'layout' }
         ],
-        interiors: [],
+        interiors: [
+          { src: 'assets/media/products/ZK01-interior-generated.webp', captionKey: 'gallery.imgZK01InteriorGenerated' },
+          { src: 'assets/media/products/ZK01-layout-generated.webp', captionKey: 'gallery.imgZK01LayoutGenerated', kind: 'layout' }
+        ],
         videos: [
           { src: 'assets/media/video/ZK01-web-20s.mp4', poster: 'assets/media/products/ZK01-exterior.webp', captionKey: 'gallery.videoTitle1' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK01-quotation.xlsx'
       },
       zk02: {
         code: 'ZK02',
@@ -75,12 +91,17 @@
         image: 'assets/media/products/ZK02-exterior.webp',
         gallery: [
           { src: 'assets/media/products/ZK02-exterior.webp', captionKey: 'gallery.imgZK02Exterior' },
-          { src: 'assets/media/products/ZK02-solar.webp', captionKey: 'gallery.imgZK02Solar' }
+          { src: 'assets/media/products/ZK02-solar.webp', captionKey: 'gallery.imgZK02Solar' },
+          { src: 'assets/media/products/ZK02-interior-generated.webp', captionKey: 'gallery.imgZK02InteriorGenerated' },
+          { src: 'assets/media/products/ZK02-layout-generated.webp', captionKey: 'gallery.imgZK02LayoutGenerated', kind: 'layout' }
         ],
-        interiors: [],
+        interiors: [
+          { src: 'assets/media/products/ZK02-interior-generated.webp', captionKey: 'gallery.imgZK02InteriorGenerated' },
+          { src: 'assets/media/products/ZK02-layout-generated.webp', captionKey: 'gallery.imgZK02LayoutGenerated', kind: 'layout' }
+        ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK02-quotation.xlsx'
       },
       zk03: {
         code: 'ZK03',
@@ -96,15 +117,17 @@
         gallery: [
           { src: 'assets/media/products/ZK03-exterior.webp', captionKey: 'gallery.imgZK03Exterior' },
           { src: 'assets/media/products/ZK03-interior-education.webp', captionKey: 'gallery.imgZK03Education' },
-          { src: 'assets/media/products/ZK03-interior-meeting.webp', captionKey: 'gallery.imgZK03Meeting' }
+          { src: 'assets/media/products/ZK03-interior-meeting.webp', captionKey: 'gallery.imgZK03Meeting' },
+          { src: 'assets/media/products/ZK03-layout-generated.webp', captionKey: 'gallery.imgZK03LayoutGenerated', kind: 'layout' }
         ],
         interiors: [
           { src: 'assets/media/products/ZK03-interior-education.webp', captionKey: 'gallery.imgZK03Education' },
-          { src: 'assets/media/products/ZK03-interior-meeting.webp', captionKey: 'gallery.imgZK03Meeting' }
+          { src: 'assets/media/products/ZK03-interior-meeting.webp', captionKey: 'gallery.imgZK03Meeting' },
+          { src: 'assets/media/products/ZK03-layout-generated.webp', captionKey: 'gallery.imgZK03LayoutGenerated', kind: 'layout' }
         ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK03-quotation.xlsx'
       },
       zk04: {
         code: 'ZK04',
@@ -123,12 +146,12 @@
           { src: 'assets/media/products/ZK04-interior.webp', captionKey: 'gallery.imgZK04Interior' }
         ],
         interiors: [
-          { src: 'assets/media/products/ZK04-interior-layout.webp', captionKey: 'gallery.imgZK04Layout' },
+          { src: 'assets/media/products/ZK04-interior-layout.webp', captionKey: 'gallery.imgZK04Layout', kind: 'layout' },
           { src: 'assets/media/products/ZK04-interior.webp', captionKey: 'gallery.imgZK04Interior' }
         ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK04-quotation.xlsx'
       },
       zk05: {
         code: 'ZK05',
@@ -154,13 +177,16 @@
         interiors: [
           { src: 'assets/media/products/ZK05-interior-bedroom.webp', captionKey: 'gallery.imgZK05Bedroom' },
           { src: 'assets/media/products/ZK05-interior-suite.webp', captionKey: 'gallery.imgZK05Suite' },
-          { src: 'assets/media/products/ZK05-interior-lounge.webp', captionKey: 'gallery.imgZK05Lounge' }
+          { src: 'assets/media/products/ZK05-interior-lounge.webp', captionKey: 'gallery.imgZK05Lounge' },
+          { src: 'assets/media/products/ZK05-layout-01.webp', captionKey: 'gallery.imgZK05Layout1', kind: 'layout' },
+          { src: 'assets/media/products/ZK05-layout-02.webp', captionKey: 'gallery.imgZK05Layout2', kind: 'layout' },
+          { src: 'assets/media/products/ZK05-layout-03.webp', captionKey: 'gallery.imgZK05Layout3', kind: 'layout' }
         ],
         videos: [
           { src: 'assets/media/video/ZK05-web.mp4', poster: 'assets/media/products/ZK05-exterior.webp', captionKey: 'gallery.videoZK05' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK05-quotation.xlsx'
       },
       zk06: {
         code: 'ZK06',
@@ -192,7 +218,7 @@
           { src: 'assets/media/video/ZK06-web.mp4', poster: 'assets/media/products/ZK06-exterior.webp', captionKey: 'gallery.videoZK06' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: '',
+        quoteUrl: 'assets/files/quotes/ZK06-quotation.xlsx',
         featured: true
       },
       zk07: {
@@ -207,14 +233,19 @@
         configKey: 'models.zk07.config',
         image: 'assets/media/products/ZK07-exterior.webp',
         gallery: [
-          { src: 'assets/media/products/ZK07-exterior.webp', captionKey: 'gallery.imgZK07Commercial' }
+          { src: 'assets/media/products/ZK07-exterior.webp', captionKey: 'gallery.imgZK07Commercial' },
+          { src: 'assets/media/products/ZK07-interior-generated.webp', captionKey: 'gallery.imgZK07InteriorGenerated' },
+          { src: 'assets/media/products/ZK07-layout-generated.webp', captionKey: 'gallery.imgZK07LayoutGenerated', kind: 'layout' }
         ],
-        interiors: [],
+        interiors: [
+          { src: 'assets/media/products/ZK07-interior-generated.webp', captionKey: 'gallery.imgZK07InteriorGenerated' },
+          { src: 'assets/media/products/ZK07-layout-generated.webp', captionKey: 'gallery.imgZK07LayoutGenerated', kind: 'layout' }
+        ],
         videos: [
           { src: 'assets/media/video/ZK07-web.mp4', poster: 'assets/media/products/ZK07-exterior.webp', captionKey: 'gallery.videoZK07' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK07-quotation.xlsx'
       },
       zk08: {
         code: 'ZK08',
@@ -229,14 +260,19 @@
         image: 'assets/media/products/ZK08-exterior.webp',
         gallery: [
           { src: 'assets/media/products/ZK08-exterior.webp', captionKey: 'gallery.imgZK08Exterior' },
-          { src: 'assets/media/products/ZK08-emergency.webp', captionKey: 'gallery.imgZK08Emergency' }
+          { src: 'assets/media/products/ZK08-emergency.webp', captionKey: 'gallery.imgZK08Emergency' },
+          { src: 'assets/media/products/ZK08-interior-generated.webp', captionKey: 'gallery.imgZK08InteriorGenerated' },
+          { src: 'assets/media/products/ZK08-layout-generated.webp', captionKey: 'gallery.imgZK08LayoutGenerated', kind: 'layout' }
         ],
-        interiors: [],
+        interiors: [
+          { src: 'assets/media/products/ZK08-interior-generated.webp', captionKey: 'gallery.imgZK08InteriorGenerated' },
+          { src: 'assets/media/products/ZK08-layout-generated.webp', captionKey: 'gallery.imgZK08LayoutGenerated', kind: 'layout' }
+        ],
         videos: [
           { src: 'assets/media/video/ZK08-web.mp4', poster: 'assets/media/products/ZK08-exterior.webp', captionKey: 'gallery.videoZK08' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK08-quotation.xlsx'
       },
       zk09: {
         code: 'ZK09',
@@ -266,7 +302,7 @@
           { src: 'assets/media/video/ZK09-web.mp4', poster: 'assets/media/products/ZK09-exterior.webp', captionKey: 'gallery.videoZK09' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ZK09-quotation.xlsx'
       },
       abadi: {
         code: 'ABADI',
@@ -282,12 +318,17 @@
         gallery: [
           { src: 'assets/media/products/ABADI-custom.webp', captionKey: 'gallery.imgABADICustom' },
           { src: 'assets/media/products/ABADI-1.webp', captionKey: 'gallery.imgABADISignature' },
-          { src: 'assets/media/products/ABADI-clean.webp', captionKey: 'gallery.imgABADI' }
+          { src: 'assets/media/products/ABADI-clean.webp', captionKey: 'gallery.imgABADI' },
+          { src: 'assets/media/products/ABADI-interior-generated.webp', captionKey: 'gallery.imgABADIInteriorGenerated' },
+          { src: 'assets/media/products/ABADI-layout-generated.webp', captionKey: 'gallery.imgABADILayoutGenerated', kind: 'layout' }
         ],
-        interiors: [],
+        interiors: [
+          { src: 'assets/media/products/ABADI-interior-generated.webp', captionKey: 'gallery.imgABADIInteriorGenerated' },
+          { src: 'assets/media/products/ABADI-layout-generated.webp', captionKey: 'gallery.imgABADILayoutGenerated', kind: 'layout' }
+        ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: ''
+        quoteUrl: 'assets/files/quotes/ABADI-quotation.xlsx'
       }
     }
   };
