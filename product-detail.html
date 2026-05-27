@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="中科ZK系列太空舱产品详情，查看建议面积、内部功能和适用场景。">
-  <title>产品详情 - 中科国际顾问 - 智慧太空舱</title>
+  <title>产品详情 - 中科国际 - 智慧太空舱</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260527-6">
 </head>
-<body>
+<body class="ui-hybrid page-product-detail">
   <div data-site-header></div>
   <main>
-    <section class="page-hero">
+    <section class="page-hero detail-titlebar">
       <div class="container">
         <span class="section-tag" data-i18n="detail.label">产品详情</span>
         <h1 id="detailPageTitle">ZK01 基础生活舱</h1>
@@ -21,14 +21,14 @@
       </div>
     </section>
 
-    <section class="section model-detail-nav-section">
+    <section class="section model-detail-nav-section detail-dark-stage">
       <div class="container detail-model-nav">
         <span data-i18n="detail.selectModel">选择型号</span>
         <div id="detailModelNav"></div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section detail-showcase detail-dark-stage">
       <div class="container">
         <div class="detail-hero-card reveal">
           <div class="detail-hero-media" id="detailHeroMedia"></div>
@@ -41,7 +41,8 @@
               <span id="detailUse"></span>
             </div>
             <div class="detail-actions">
-              <a class="btn btn-primary" id="detailConsultLink" href="contact.html?model=zk01" data-i18n="detail.consult">咨询该型号</a>
+              <span id="detailQuoteControl"></span>
+              <a class="btn btn-outline" id="detailConsultLink" href="contact.html?model=zk01" data-i18n="detail.consult">提交项目需求</a>
               <a class="btn btn-outline" href="products.html" data-i18n="detail.backToProducts">返回产品中心</a>
               <a class="btn btn-outline" id="detailZK06Link" href="zk06.html" data-i18n="detail.featureZK06" hidden>查看 ZK06 专题</a>
             </div>
@@ -50,7 +51,7 @@
       </div>
     </section>
 
-    <section class="section section-surface">
+    <section class="section section-surface light-section">
       <div class="container">
         <div class="detail-spec-grid reveal">
           <article class="info-tile"><h3 data-i18n="detail.area">建议面积</h3><p id="specArea"></p></article>
@@ -66,11 +67,44 @@
       </div>
     </section>
 
-    <section class="section" id="officialMediaSection">
+    <section class="section light-section detail-visual-specs">
+      <div class="container">
+        <div class="detail-technical-layout">
+          <article class="technical-panel reveal">
+            <div class="section-header">
+              <h2 class="section-title" data-i18n="detail.structureTitle">产品结构解析</h2>
+              <p class="section-subtitle" data-i18n="detail.structureDesc">结构爆炸图展示舱体围护、保温、隔音和表面防护层的产品表达，具体构造以项目确认文件为准。</p>
+            </div>
+            <figure class="structure-figure">
+              <img src="assets/media/products/structure-exploded.webp" alt="产品结构爆炸图">
+              <figcaption data-i18n="detail.structureCaption">产品结构爆炸图</figcaption>
+            </figure>
+          </article>
+          <article class="technical-panel reveal">
+            <div class="section-header">
+              <h2 class="section-title" data-i18n="detail.interiorsTitle">内部空间与装修</h2>
+              <p class="section-subtitle" data-i18n="detail.interiorsDesc">内部装修示意。</p>
+            </div>
+            <div class="interior-preview-grid" id="detailInteriorGrid"></div>
+            <div class="media-placeholder interior-placeholder" id="detailNoInteriors" hidden>
+              <span>INTERIOR MEDIA</span>
+              <strong id="detailInteriorCode">ZK01</strong>
+              <small data-i18n="detail.noInteriors">该型号内部空间影像待补充。</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="officialMediaSection">
       <div class="container">
         <div class="section-header reveal">
           <h2 class="section-title" data-i18n="detail.imagery">正式影像</h2>
           <p class="section-subtitle" data-i18n="detail.imageryDesc">仅展示已确认的产品影像；尚未提供正式素材的型号以文字参数为准。</p>
+        </div>
+        <div class="detail-video-block reveal" id="detailVideoBlock" hidden>
+          <h3 data-i18n="detail.videosTitle">产品视频</h3>
+          <div class="detail-video-grid" id="detailVideoGrid"></div>
         </div>
         <div class="detail-gallery-grid reveal" id="detailGalleryGrid"></div>
         <p class="detail-empty-note" id="detailNoImages" data-i18n="detail.noImages" hidden>该型号的正式影像将在资料确认后发布。</p>
@@ -79,10 +113,10 @@
   </main>
 
   <div data-site-footer></div>
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/product-data.js"></script>
-  <script src="assets/js/site-components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js?v=20260527-6"></script>
+  <script src="assets/js/product-data.js?v=20260527-6"></script>
+  <script src="assets/js/site-components.js?v=20260527-6"></script>
+  <script src="assets/js/main.js?v=20260527-6"></script>
   <script>
     (function () {
       'use strict';
@@ -106,16 +140,42 @@
         document.getElementById('specConfiguration').textContent = ZK.t(model.configKey);
         document.getElementById('detailConsultLink').href = 'contact.html?model=' + modelId;
         document.getElementById('detailZK06Link').hidden = modelId !== 'zk06';
+        document.getElementById('detailQuoteControl').innerHTML = model.quoteUrl
+          ? '<a class="btn btn-primary" download href="' + model.quoteUrl + '">' + ZK.t('detail.getQuote') + '</a>'
+          : '<button class="btn btn-primary quote-disabled" type="button" disabled>' + ZK.t(model.quoteStatusKey) + '</button>';
 
         var media = document.getElementById('detailHeroMedia');
         media.classList.toggle('no-image', !model.image);
         media.innerHTML = model.image
           ? '<img src="' + model.image + '" alt="' + model.code + ' ' + ZK.t(model.nameKey) + '">'
-          : '<div class="product-text-visual"><strong>' + model.code + '</strong><span>' + ZK.t('products.noImage') + '</span></div>';
+          : '<div class="media-placeholder detail-placeholder"><span>MODEL VISUAL</span><strong>' + model.code + '</strong><small>' + ZK.t('products.noImage') + '</small></div>';
 
         document.getElementById('detailModelNav').innerHTML = catalog.order.map(function (id) {
           var current = id === modelId ? ' active' : '';
           return '<a class="detail-model-chip' + current + '" href="product-detail.html?model=' + id + '">' + catalog.items[id].code + '</a>';
+        }).join('');
+
+        var interiorGrid = document.getElementById('detailInteriorGrid');
+        var noInteriors = document.getElementById('detailNoInteriors');
+        document.getElementById('detailInteriorCode').textContent = model.code;
+        if (model.interiors.length) {
+          noInteriors.hidden = true;
+          interiorGrid.innerHTML = model.interiors.map(function (image) {
+            var caption = ZK.t(image.captionKey);
+            return '<button class="interior-preview' + (image.kind === 'layout' ? ' is-layout' : '') + '" type="button" data-lightbox="' + image.src + '" data-caption="' + caption + '">' +
+              '<img loading="lazy" src="' + image.src + '" alt="' + caption + '"><span>' + caption + '</span></button>';
+          }).join('');
+        } else {
+          interiorGrid.innerHTML = '';
+          noInteriors.hidden = false;
+        }
+
+        var videoBlock = document.getElementById('detailVideoBlock');
+        var videoGrid = document.getElementById('detailVideoGrid');
+        videoBlock.hidden = model.videos.length === 0;
+        videoGrid.innerHTML = model.videos.map(function (video) {
+          var caption = ZK.t(video.captionKey);
+          return '<article><div class="video-wrapper media-player"><video preload="none" playsinline poster="' + video.poster + '"><source src="' + video.src + '" type="video/mp4"></video><button class="media-play-button" type="button" data-media-play aria-label="' + caption + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"></path></svg></button></div><h4>' + caption + '</h4></article>';
         }).join('');
 
         var grid = document.getElementById('detailGalleryGrid');
@@ -125,7 +185,7 @@
           grid.innerHTML = model.gallery.map(function (image) {
             var caption = ZK.t(image.captionKey);
             return '<button class="detail-gallery-item" type="button" data-lightbox="' + image.src + '" data-caption="' + caption + '">' +
-              '<img src="' + image.src + '" alt="' + caption + '"><span class="detail-gallery-caption">' + caption + '</span></button>';
+              '<img loading="lazy" src="' + image.src + '" alt="' + caption + '"><span class="detail-gallery-caption">' + caption + '</span></button>';
           }).join('');
         } else {
           grid.innerHTML = '';

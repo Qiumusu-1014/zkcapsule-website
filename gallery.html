@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="中科ZK系列太空舱正式产品影像资料。">
-  <title>产品影像 - 中科国际顾问 - 智慧太空舱</title>
+  <title>产品影像 - 中科国际 - 智慧太空舱</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260527-6">
 </head>
-<body>
+<body class="ui-hybrid page-gallery">
   <div data-site-header></div>
   <main>
     <section class="page-hero">
@@ -21,27 +21,18 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section light-section">
       <div class="container">
         <div class="section-header reveal"><h2 class="section-title">VIDEO</h2></div>
-        <div class="video-grid reveal">
-          <article>
-            <div class="video-wrapper"><video controls preload="metadata" poster="assets/media/products/ZK01.png"><source src="assets/media/video/ZK01-web-20s.mp4" type="video/mp4"></video></div>
-            <h3 data-i18n="gallery.videoTitle1">ZK01 产品视频</h3>
-          </article>
-          <article>
-            <div class="video-wrapper"><video controls preload="metadata" poster="assets/media/products/ZK07.png"><source src="assets/media/video/ZK07.mp4" type="video/mp4"></video></div>
-            <h3 data-i18n="gallery.videoTitle2">ZK07 产品视频</h3>
-          </article>
-        </div>
+        <div class="video-grid product-video-grid reveal" id="productVideoGrid"></div>
       </div>
     </section>
 
-    <section class="section section-surface">
+    <section class="section section-surface light-section">
       <div class="container">
         <div class="section-header reveal">
           <h2 class="section-title" data-i18n="gallery.imagesTitle">正式产品图片</h2>
-          <p class="section-subtitle" data-i18n="gallery.imagesDesc">目前公开展示 ZK01、ZK07 与 ZK08 的已确认产品影像。</p>
+          <p class="section-subtitle" data-i18n="gallery.imagesDesc">展示已确认归属的正式外观、内装及配置影像。</p>
         </div>
         <div class="gallery-model-groups reveal" id="galleryModelGroups"></div>
         <p class="gallery-note" data-i18n="gallery.subtitle">仅展示已有正式影像资料的型号；其他型号将在素材确认后补充。</p>
@@ -49,15 +40,22 @@
     </section>
   </main>
   <div data-site-footer></div>
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/product-data.js"></script>
-  <script src="assets/js/site-components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js?v=20260527-6"></script>
+  <script src="assets/js/product-data.js?v=20260527-6"></script>
+  <script src="assets/js/site-components.js?v=20260527-6"></script>
+  <script src="assets/js/main.js?v=20260527-6"></script>
   <script>
     (function () {
       'use strict';
       function renderGallery() {
         var catalog = window.ZK_PRODUCT_MODELS;
+        document.getElementById('productVideoGrid').innerHTML = catalog.order.map(function (id) {
+          var model = catalog.items[id];
+          return model.videos.map(function (video) {
+            var caption = ZK.t(video.captionKey);
+            return '<article><div class="video-wrapper media-player"><video preload="none" playsinline poster="' + video.poster + '"><source src="' + video.src + '" type="video/mp4"></video><button class="media-play-button" type="button" data-media-play aria-label="' + caption + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"></path></svg></button></div><h3>' + caption + '</h3></article>';
+          }).join('');
+        }).join('');
         document.getElementById('galleryModelGroups').innerHTML = catalog.order.filter(function (id) {
           return catalog.items[id].gallery.length > 0;
         }).map(function (id) {
@@ -66,7 +64,7 @@
             '<a href="product-detail.html?model=' + id + '">' + ZK.t('products.viewDetails') + '</a></div>' +
             '<div class="gallery-grid">' + model.gallery.map(function (image) {
               var caption = ZK.t(image.captionKey);
-              return '<button class="gallery-item" type="button" data-lightbox="' + image.src + '" data-caption="' + caption + '"><img src="' + image.src + '" alt="' + caption + '"><span class="gallery-caption">' + caption + '</span></button>';
+              return '<button class="gallery-item" type="button" data-lightbox="' + image.src + '" data-caption="' + caption + '"><img loading="lazy" src="' + image.src + '" alt="' + caption + '"><span class="gallery-caption">' + caption + '</span></button>';
             }).join('') + '</div></section>';
         }).join('');
       }

@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="中科ZK01-ZK09太空舱产品中心，按场景查看建议面积与产品定位。">
-  <title>产品中心 - 中科国际顾问 - 智慧太空舱</title>
+  <meta name="description" content="中科正式太空舱产品中心，查看ZK01至ZK09及ABADI型号定位与已确认影像。">
+  <title>产品中心 - 中科国际 - 智慧太空舱</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260527-6">
 </head>
-<body>
+<body class="ui-hybrid page-products">
   <div data-site-header></div>
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <span class="section-tag">ZK SERIES</span>
-        <h1 data-i18n="products.title">产品中心</h1>
-        <p data-i18n="products.subtitle">中科 ZK 系列覆盖九类真实使用场景。各型号面积与功能为产品方案建议，具体交付以项目确认方案为准。</p>
+    <section class="page-hero products-hero">
+      <div class="container page-hero-layout">
+        <div class="page-hero-copy">
+          <span class="section-tag">OFFICIAL SERIES</span>
+          <h1 data-i18n="products.title">产品中心</h1>
+          <p data-i18n="products.subtitle">中科正式产品系列覆盖多类真实使用场景。各型号面积与功能为产品方案建议，具体交付以项目确认方案为准。</p>
+        </div>
+        <div class="page-hero-media" aria-hidden="true">
+          <img class="hero-cover-media" src="assets/media/brand/hero-top.webp" alt="">
+          <span>ZHONGKE / OFFICIAL CAPSULE SERIES</span>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section light-section catalog-section">
       <div class="container">
         <div class="section-header reveal">
-          <h2 class="section-title" data-i18n="products.lineupTitle">ZK01-ZK09 产品矩阵</h2>
-          <p class="section-subtitle" data-i18n="products.lineupSubtitle">按使用场景筛选产品，查看建议面积、核心定位与配置方向。</p>
+          <h2 class="section-title" data-i18n="products.lineupTitle">十型号产品矩阵</h2>
+          <p class="section-subtitle" data-i18n="products.lineupSubtitle">按使用场景筛选产品，查看正式影像、核心定位与配置方向。</p>
         </div>
         <div class="product-filters reveal" aria-label="Product categories">
           <button type="button" class="filter-button active" data-filter="all" data-i18n="products.filterAll">全部型号</button>
@@ -34,12 +40,32 @@
           <button type="button" class="filter-button" data-filter="medical" data-i18n="products.filterMedical">医疗健康</button>
           <button type="button" class="filter-button" data-filter="commercial" data-i18n="products.filterCommercial">商业服务</button>
           <button type="button" class="filter-button" data-filter="emergency" data-i18n="products.filterEmergency">应急保障</button>
+          <button type="button" class="filter-button" data-filter="custom" data-i18n="products.filterCustom">高端定制</button>
         </div>
         <div class="product-lineup-grid reveal" id="productLineupGrid"></div>
       </div>
     </section>
 
-    <section class="section section-surface">
+    <section class="section section-surface light-section interior-showcase-section" id="interiorShowcase">
+      <div class="container">
+        <div class="section-header section-header-split reveal">
+          <div>
+            <span class="section-tag">INTERIOR &amp; LAYOUT</span>
+            <h2 class="section-title" data-i18n="products.interiorsShowcaseTitle">内部空间与装修</h2>
+            <p class="section-subtitle" data-i18n="products.interiorsShowcaseText">内部装修示意。</p>
+          </div>
+          <div class="interior-filters" id="productInteriorFilters" aria-label="Interior media categories">
+            <button type="button" class="filter-button active" data-interior-filter="interior" data-i18n="products.interiorFilterInterior">内部空间</button>
+            <button type="button" class="filter-button" data-interior-filter="layout" data-i18n="products.interiorFilterLayout">平面布局</button>
+            <button type="button" class="filter-button" data-interior-filter="structure" data-i18n="products.interiorFilterStructure">结构解析</button>
+            <button type="button" class="filter-button" data-interior-filter="all" data-i18n="products.interiorFilterAll">全部</button>
+          </div>
+        </div>
+        <div class="interior-showcase-grid reveal" id="productInteriorGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-surface light-section">
       <div class="container">
         <div class="section-header reveal">
           <h2 class="section-title" data-i18n="products.modulesTitle">功能配置与选配模块</h2>
@@ -60,14 +86,15 @@
   </main>
 
   <div data-site-footer></div>
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/product-data.js"></script>
-  <script src="assets/js/site-components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js?v=20260527-6"></script>
+  <script src="assets/js/product-data.js?v=20260527-6"></script>
+  <script src="assets/js/site-components.js?v=20260527-6"></script>
+  <script src="assets/js/main.js?v=20260527-6"></script>
   <script>
     (function () {
       'use strict';
       var activeCategory = 'all';
+      var activeInteriorFilter = 'interior';
       var catalog = window.ZK_PRODUCT_MODELS;
 
       function renderCards() {
@@ -76,15 +103,17 @@
         host.innerHTML = ids.map(function (id) {
           var model = catalog.items[id];
           var media = model.image
-            ? '<div class="product-model-media"><img src="' + model.image + '" alt="' + model.code + ' ' + ZK.t(model.nameKey) + '"></div>'
-            : '<div class="product-model-media"><div class="product-text-visual"><strong>' + model.code + '</strong><span>' + ZK.t('products.noImage') + '</span></div></div>';
-          return '<a class="product-model-card' + (model.featured ? ' featured-model' : '') + '" href="product-detail.html?model=' + id + '">' +
-            media +
+            ? '<div class="product-model-media"><img loading="lazy" src="' + model.image + '" alt="' + model.code + ' ' + ZK.t(model.nameKey) + '"></div>'
+            : '<div class="product-model-media is-pending"><div class="media-placeholder"><span>MODEL VISUAL</span><strong>' + model.code + '</strong><small>' + ZK.t('products.noImage') + '</small></div></div>';
+          var quote = model.quoteUrl
+            ? '<a class="model-action model-action-quote" download href="' + model.quoteUrl + '">' + ZK.t('products.getQuote') + '</a>'
+            : '<button class="model-action model-action-pending" type="button" disabled>' + ZK.t(model.quoteStatusKey) + '</button>';
+          return '<article class="product-model-card' + (model.featured ? ' featured-model' : '') + '">' +
+            '<a class="product-model-link" href="product-detail.html?model=' + id + '">' + media +
             '<div class="product-model-body"><span class="model-code">' + model.code + '</span>' +
             '<h3>' + ZK.t(model.nameKey) + '</h3>' +
             '<p class="model-slogan">' + ZK.t(model.taglineKey) + '</p>' +
-            '<div class="model-data"><p><span>' + ZK.t('products.areaLabel') + '</span>' + ZK.t(model.areaKey) + '</p><p><span>' + ZK.t('products.useLabel') + '</span>' + ZK.t(model.useKey) + '</p></div>' +
-            '<div class="product-model-footer"><span>' + ZK.t('products.viewDetails') + '</span></div></div></a>';
+            '</div></a><div class="product-model-actions"><a class="model-action model-action-detail" href="product-detail.html?model=' + id + '">' + ZK.t('products.viewDetails') + '</a>' + quote + '</div></article>';
         }).join('');
       }
 
@@ -98,11 +127,39 @@
         renderCards();
       }
 
+      function renderInteriorMedia() {
+        var host = document.getElementById('productInteriorGrid');
+        var media = catalog.interiorShowcase.filter(function (item) {
+          return activeInteriorFilter === 'all' || item.kind === activeInteriorFilter;
+        });
+        host.innerHTML = media.map(function (item) {
+          var caption = ZK.t(item.captionKey);
+          return '<button class="interior-showcase-card is-' + item.kind + '" type="button" data-lightbox="' + item.src + '" data-caption="' + caption + '">' +
+            '<img loading="lazy" src="' + item.src + '" alt="' + caption + '">' +
+            '<span class="interior-card-label"><strong>' + item.code + '</strong><small>' + caption + '</small></span></button>';
+        }).join('');
+      }
+
+      function setInteriorFilter(event) {
+        var button = event.target.closest('[data-interior-filter]');
+        if (!button) return;
+        activeInteriorFilter = button.getAttribute('data-interior-filter');
+        document.querySelectorAll('#productInteriorFilters .filter-button').forEach(function (item) {
+          item.classList.toggle('active', item === button);
+        });
+        renderInteriorMedia();
+      }
+
       document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.product-filters').addEventListener('click', setFilter);
+        document.getElementById('productInteriorFilters').addEventListener('click', setInteriorFilter);
         renderCards();
+        renderInteriorMedia();
       });
-      document.addEventListener('zk:langchange', renderCards);
+      document.addEventListener('zk:langchange', function () {
+        renderCards();
+        renderInteriorMedia();
+      });
     })();
   </script>
 </body>

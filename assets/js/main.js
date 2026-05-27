@@ -1,6 +1,6 @@
 /* ============================================
    Main JS - i18n, Navigation, Common Logic
-   Zhongke International Consultants (HK) Ltd.
+   Zhongke International
    ============================================ */
 
 (function () {
@@ -18,6 +18,7 @@
   else if (/products/.test(path)) pageName = 'products';
   else if (/solutions/.test(path)) pageName = 'solutions';
   else if (/zk06/.test(path)) pageName = 'zk06';
+  else if (/cases/.test(path)) pageName = 'cases';
   else if (/gallery/.test(path)) pageName = 'gallery';
   else if (/contact/.test(path)) pageName = 'contact';
 
@@ -74,7 +75,7 @@
 
     // Update document title
     var siteTitle = currentLang === 'zh'
-      ? '中科国际顾问 - 智慧太空舱'
+      ? '中科国际 - 智慧太空舱'
       : 'Zhongke International - Smart Capsule';
     var pageTitles = {
       home: currentLang === 'zh' ? '首页' : 'Home',
@@ -83,6 +84,7 @@
       detail: currentLang === 'zh' ? '产品详情' : 'Product Details',
       solutions: currentLang === 'zh' ? '场景方案' : 'Solutions',
       zk06: currentLang === 'zh' ? 'ZK06 专题' : 'ZK06 Feature',
+      cases: currentLang === 'zh' ? '案例展示' : 'Projects',
       gallery: currentLang === 'zh' ? '产品影像' : 'Media',
       contact: currentLang === 'zh' ? '联系我们' : 'Contact Us'
     };
@@ -172,7 +174,10 @@
       lb = document.createElement('div');
       lb.id = 'lightbox';
       lb.className = 'lightbox';
-      lb.innerHTML = '<div class="lightbox-close">&times;</div><div class="lightbox-content"></div>';
+      lb.setAttribute('role', 'dialog');
+      lb.setAttribute('aria-modal', 'true');
+      lb.setAttribute('aria-label', 'Product image preview');
+      lb.innerHTML = '<button class="lightbox-close" type="button" aria-label="Close image preview">&times;</button><div class="lightbox-content"></div>';
       document.body.appendChild(lb);
     }
 
@@ -213,13 +218,33 @@
         if (video) {
           if (video.paused) {
             video.play();
-            btn.textContent = '⏸';
+            btn.classList.add('is-playing');
+            btn.setAttribute('aria-pressed', 'true');
           } else {
             video.pause();
-            btn.textContent = '▶';
+            btn.classList.remove('is-playing');
+            btn.setAttribute('aria-pressed', 'false');
           }
         }
       });
+    });
+  }
+
+  // --- Poster-first media cards ---
+  function setupMediaPlayers() {
+    document.addEventListener('click', function (event) {
+      var button = event.target.closest('[data-media-play]');
+      if (!button) return;
+      var player = button.closest('.media-player');
+      var video = player && player.querySelector('video');
+      if (!video) return;
+      player.classList.add('is-playing');
+      video.controls = true;
+      button.hidden = true;
+      var playResult = video.play();
+      if (playResult && typeof playResult.catch === 'function') {
+        playResult.catch(function () {});
+      }
     });
   }
 
@@ -248,6 +273,7 @@
     setupScrollReveal();
     setupLightbox();
     setupVideoPlay();
+    setupMediaPlayers();
     setupHeroVideoLimit();
 
     // Lang toggle click
