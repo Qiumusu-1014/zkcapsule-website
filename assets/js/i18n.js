@@ -154,6 +154,7 @@ const I18N = {
       useLabel: '重点应用',
       getQuote: '获取报价单',
       quotePending: '报价单待上传',
+      quoteDisclaimer: '页面报价单为参考资料，最终价格以双方签署的合同价格为准。',
       filterAll: '全部型号',
       filterStay: '住宿度假',
       filterEducation: '教育展示',
@@ -183,7 +184,7 @@ const I18N = {
       moduleSecurityText: '净水、智能门锁、监控、烟感与水浸报警。',
       moduleMedical: '诊疗医药模块',
       moduleMedicalText: '检测、远程医疗、辅助诊断及配送接口，按合规要求确认。',
-      note: '参数说明：页面所列面积、组合形式与功能配置为方案建议；具体尺寸、设备、运输安装和审批要求以项目确认方案为准。'
+      note: '参数说明：页面所列面积、组合形式与功能配置为方案建议；具体尺寸、设备、运输安装和审批要求以项目确认方案为准；最终价格以双方签署的合同价格为准。'
     },
     detail: {
       label: '产品详情',
@@ -200,6 +201,7 @@ const I18N = {
       consult: '提交项目需求',
       getQuote: '获取报价单',
       quotePending: '报价单待上传',
+      quoteDisclaimer: '页面报价单为参考资料，最终价格以双方签署的合同价格为准。',
       structureTitle: '产品结构解析',
       structureDesc: '结构爆炸图展示舱体围护、保温、隔音和表面防护层的产品表达，具体构造以项目确认文件为准。',
       structureCaption: '产品结构爆炸图',
@@ -209,7 +211,7 @@ const I18N = {
       videosTitle: '产品视频',
       featureZK06: '查看 ZK06 专题',
       noteTitle: '项目确认说明',
-      note: '所列面积与功能配置为产品建议方案。具体尺寸、设备品牌、运输安装、医疗合规及审批要求，以项目深化方案和双方确认清单为准。'
+      note: '所列面积与功能配置为产品建议方案。具体尺寸、设备品牌、运输安装、医疗合规及审批要求，以项目深化方案和双方确认清单为准；最终价格以双方签署的合同价格为准。'
     },
     models: {
       zk01: { name: '基础生活舱', tagline: '轻装启程，舒适即刻落地。', area: '约 28㎡', use: '标准住宿、营地基础单元', summary: '以基础住宿需求为核心的标准化生活空间。', exterior: '圆角舱体与三层保温隔热玻璃，形成简洁耐用的入门产品形象。', interior: '可配置卫浴、床柜、桌椅、电器与智能门锁。', config: '基础生活与净水安防模块可按项目选择。' },
@@ -555,6 +557,7 @@ const I18N = {
       useLabel: 'Application',
       getQuote: 'Get Quotation',
       quotePending: 'Quotation Sheet Pending',
+      quoteDisclaimer: 'Quotation sheets on this site are for reference only. Final prices are subject to the signed contract.',
       filterAll: 'All Models',
       filterStay: 'Hospitality',
       filterEducation: 'Education',
@@ -584,7 +587,7 @@ const I18N = {
       moduleSecurityText: 'Water purification, smart locks, surveillance, smoke and leak alerts.',
       moduleMedical: 'Medical Module',
       moduleMedicalText: 'Testing, telemedicine, assisted diagnosis and delivery interface, subject to compliance.',
-      note: 'Parameter note: areas, combinations and functions are proposal references. Dimensions, equipment, installation and approvals follow the confirmed project solution.'
+      note: 'Parameter note: areas, combinations and functions are proposal references. Dimensions, equipment, installation and approvals follow the confirmed project solution. Final prices are subject to the signed contract.'
     },
     detail: {
       label: 'Product Details',
@@ -601,6 +604,7 @@ const I18N = {
       consult: 'Submit Project Request',
       getQuote: 'Get Quotation',
       quotePending: 'Quotation Sheet Pending',
+      quoteDisclaimer: 'Quotation sheets on this site are for reference only. Final prices are subject to the signed contract.',
       structureTitle: 'Product Structure',
       structureDesc: 'The exploded structure visual presents the product expression of enclosure, insulation, acoustic and surface-protection layers; final construction follows confirmed project documents.',
       structureCaption: 'Product Exploded Structure',
@@ -610,7 +614,7 @@ const I18N = {
       videosTitle: 'Product Video',
       featureZK06: 'View ZK06 Feature',
       noteTitle: 'Project Confirmation Note',
-      note: 'Areas and functions are recommended product proposals. Dimensions, equipment brands, transport, installation, medical compliance and approvals follow the developed project solution and confirmed list.'
+      note: 'Areas and functions are recommended product proposals. Dimensions, equipment brands, transport, installation, medical compliance and approvals follow the developed project solution and confirmed list. Final prices are subject to the signed contract.'
     },
     models: {
       zk01: { name: 'Basic Living Capsule', tagline: 'Set out lightly. Comfort arrives immediately.', area: 'Approx. 28 sqm', use: 'Standard accommodation and camp base unit', summary: 'A standardized living space focused on essential accommodation needs.', exterior: 'Rounded capsule body and triple-pane insulating glass for a simple, durable entry model.', interior: 'Optional bathroom, bed and cabinetry, tables, appliances and smart door lock.', config: 'Living and water/security modules available per project.' },
