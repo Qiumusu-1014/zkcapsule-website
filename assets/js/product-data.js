@@ -259,8 +259,6 @@
           { src: 'assets/media/products/ZK09-2.webp', captionKey: 'gallery.imgZK09Detail2' }
         ],
         interiors: [
-          { src: 'assets/media/products/ZK09-interior-01.webp', captionKey: 'gallery.imgZK09Interior1' },
-          { src: 'assets/media/products/ZK09-interior-02.webp', captionKey: 'gallery.imgZK09Interior2' },
           { src: 'assets/media/products/ZK09-layout-01.webp', captionKey: 'gallery.imgZK09Layout1', kind: 'layout' },
           { src: 'assets/media/products/ZK09-layout-02.webp', captionKey: 'gallery.imgZK09Layout2', kind: 'layout' }
         ],
