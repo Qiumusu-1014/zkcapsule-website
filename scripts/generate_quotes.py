@@ -57,6 +57,44 @@ COMMON_OPTIONS = [
     ("运输成本合计", "Estimated logistics cost", 96700),
 ]
 
+ZK05_SPECIAL_OPTIONS = [
+    ("露台户外休闲包", "Terrace outdoor leisure package", 85000, "户外露台、休闲座椅、遮阳及景观布置", "Outdoor terrace, leisure seating, shading and landscape setup"),
+    ("活动运营移动部署包", "Mobile deployment package for events", 120000, "牵引、支撑腿、户外接口及快速转场结构", "Towing, support legs, outdoor interfaces and quick relocation structure"),
+    ("户外遮阳棚 / 雨棚", "Outdoor canopy / awning", 28000, "适合露台、营地和景区休闲区", "Suitable for terraces, campsites and resort leisure areas"),
+    ("户外家具与景观灯", "Outdoor furniture and landscape lighting", 22000, "露台桌椅、氛围灯和景观照明", "Terrace furniture, ambient lighting and landscape lights"),
+]
+
+ZK06_SPECIAL_OPTIONS = [
+    ("外置楼梯与连廊包", "External staircase and corridor package", 85000, "双舱固定叠加结构已包含，本项仅为外部通行升级", "The fixed stacked dual-capsule structure is included; this is only an access upgrade"),
+    ("观景露台与安全栏杆包", "Viewing terrace and safety railing package", 70000, "二层观景露台、栏杆和户外休闲区", "Second-level viewing terrace, railings and outdoor leisure area"),
+    ("酒店套房软装包", "Hotel suite soft furnishing package", 120000, "大床、迷你吧、衣柜、软装和度假客房氛围", "Large bed, minibar, wardrobe, soft furnishing and resort-suite atmosphere"),
+    ("竖向管线检修增强包", "Vertical MEP maintenance enhancement", 35000, "上下层水电暖通检修和集中接口增强", "Enhanced vertical MEP access and centralized service interfaces"),
+]
+
+ZK07_SPECIAL_OPTIONS = [
+    ("商业窗口与折叠柜台包", "Service window and folding counter package", 35000, "外摆售卖窗口、折叠柜台和营业开口", "Outdoor-facing service window, folding counter and commercial opening"),
+    ("发光招牌 / 品牌门头", "Illuminated signage / branded fascia", 25000, "景区、商业街或展会品牌识别", "Brand identity for scenic areas, retail streets or exhibitions"),
+    ("POS 收银与网络包", "POS and network package", 18000, "POS 位、收银网络和基础布线", "POS location, cashier network and basic wiring"),
+    ("水吧操作台 / 展示柜包", "Beverage counter / display cabinet package", 45000, "水吧操作台、展示柜、冰箱及储物", "Beverage counter, display cabinet, refrigerator and storage"),
+]
+
+ZK08_SPECIAL_OPTIONS = [
+    ("卫星通信增强包", "Satellite communication enhancement package", 120000, "在基础应急通信上增加卫星/多链路冗余", "Adds satellite / multi-link redundancy to the base emergency communication system"),
+    ("大型地图指挥屏增强包", "Large map command display enhancement", 80000, "地图大屏、指挥显示和多源画面接入", "Large map display, command screen and multi-source video access"),
+    ("便携应急医疗包", "Portable emergency medical package", 60000, "基础救援、急救和应急医疗物资配置", "Basic rescue, first-aid and emergency medical supplies"),
+    ("无人机指挥 / 充电接口", "Drone command / charging interface", 90000, "无人机起降、充电和应急巡检接口", "Drone landing, charging and emergency inspection interfaces"),
+    ("额外储能 / 发电机接口", "Extra storage / generator interface", 150000, "高规格备用电源和外接发电机接口增强", "Enhanced backup power and external generator interface"),
+]
+
+ZK09_SPECIAL_OPTIONS = [
+    ("多舱组合深化设计包", "Multi-capsule combination design package", 180000, "双舱/多舱组合平面、结构和动线深化", "Detailed planning, structure and circulation for dual/multi-capsule combinations"),
+    ("旗舰外立面定制包", "Flagship facade customization package", 250000, "高端定制外立面、品牌形象和夜景灯光", "Premium customized facade, brand identity and night lighting"),
+    ("VIP 会客 / 吧台升级包", "VIP lounge / bar counter upgrade package", 180000, "独立会客区、吧台和商务接待软装", "Private lounge area, bar counter and business reception furnishing"),
+    ("顶级内饰材料包", "Premium interior materials package", 300000, "高级饰面、定制家具和酒店级材料", "Premium finishes, custom furniture and hotel-grade materials"),
+    ("全屋智能 / 灯光联动包", "Whole-space smart control / lighting package", 160000, "全屋智能、灯光场景和设备联动", "Whole-space smart control, lighting scenes and device linkage"),
+    ("品牌展厅多媒体包", "Brand showroom multimedia package", 220000, "品牌展示、LED/投影/互动多媒体系统", "Brand display, LED / projection and interactive multimedia system"),
+]
+
 MODELS = [
     {
         "code": "ZK01",
@@ -94,11 +132,51 @@ MODELS = [
         "base": 850000,
         "special_options": [],
     },
-    {"code": "ZK05", "zh_name": "露台舱", "en_name": "Terrace Capsule", "zh_desc": "项目定制", "en_desc": "Customized project", "base": None, "special_options": []},
-    {"code": "ZK06", "zh_name": "叠加度假套房舱", "en_name": "Stacked Resort Suite Capsule", "zh_desc": "项目定制", "en_desc": "Customized project", "base": None, "special_options": []},
-    {"code": "ZK07", "zh_name": "商业服务舱", "en_name": "Commercial Service Capsule", "zh_desc": "项目定制", "en_desc": "Customized project", "base": None, "special_options": []},
-    {"code": "ZK08", "zh_name": "应急指挥舱", "en_name": "Emergency Command Capsule", "zh_desc": "项目定制", "en_desc": "Customized project", "base": None, "special_options": []},
-    {"code": "ZK09", "zh_name": "旗舰定制舱", "en_name": "Flagship Customized Capsule", "zh_desc": "项目定制", "en_desc": "Customized project", "base": None, "special_options": []},
+    {
+        "code": "ZK05",
+        "zh_name": "露台舱",
+        "en_name": "Terrace Capsule",
+        "zh_desc": "露台、户外休闲、景区度假基础配置",
+        "en_desc": "Terrace, outdoor leisure and resort-use base configuration",
+        "base": 620000,
+        "special_options": ZK05_SPECIAL_OPTIONS,
+    },
+    {
+        "code": "ZK06",
+        "zh_name": "叠加度假套房舱",
+        "en_name": "Stacked Resort Suite Capsule",
+        "zh_desc": "固定双舱叠加结构，基础价按 2 × ZK01 基础生活舱计算",
+        "en_desc": "Fixed two-capsule stacked structure; base price equals 2 × ZK01 Basic Living Capsule",
+        "base": 900000,
+        "special_options": ZK06_SPECIAL_OPTIONS,
+    },
+    {
+        "code": "ZK07",
+        "zh_name": "商业服务舱",
+        "en_name": "Commercial Service Capsule",
+        "zh_desc": "轻量商业运营舱，适合售卖窗口、快闪商业和服务点",
+        "en_desc": "Light commercial operation capsule for service windows, pop-up retail and service points",
+        "base": 200000,
+        "special_options": ZK07_SPECIAL_OPTIONS,
+    },
+    {
+        "code": "ZK08",
+        "zh_name": "应急指挥舱",
+        "en_name": "Emergency Command Capsule",
+        "zh_desc": "高规格应急系统基础配置，含应急通信、备用电源、指挥调度和警示识别能力",
+        "en_desc": "High-spec emergency system base configuration with emergency communications, backup power, command dispatch and warning identity",
+        "base": 1500000,
+        "special_options": ZK08_SPECIAL_OPTIONS,
+    },
+    {
+        "code": "ZK09",
+        "zh_name": "旗舰定制舱",
+        "en_name": "Flagship Customized Capsule",
+        "zh_desc": "双舱/多舱组合、VIP会客、吧台、顶级内饰和全屋智能基础配置",
+        "en_desc": "Dual/multi-capsule combination with VIP lounge, bar counter, premium interior and smart control base configuration",
+        "base": 1680000,
+        "special_options": ZK09_SPECIAL_OPTIONS,
+    },
     {"code": "ABADI", "zh_name": "高端定制智慧太空舱", "en_name": "Premium Customized Smart Capsule", "zh_desc": "项目定制", "en_desc": "Customized project", "base": None, "special_options": []},
 ]
 
@@ -151,6 +229,16 @@ def labels(lang):
         "rmb": "RMB",
         "empty_base": "",
     }
+
+
+def option_parts(option, lang):
+    if len(option) == 3:
+        zh, en, amount = option
+        return (zh if lang == "zh" else en), amount, ""
+    if len(option) == 5:
+        zh, en, amount, zh_remark, en_remark = option
+        return (zh if lang == "zh" else en), amount, zh_remark if lang == "zh" else en_remark
+    raise ValueError(f"Unexpected option format: {option}")
 
 
 def set_font(cell, size=10, bold=False, color=NAVY):
@@ -284,14 +372,14 @@ def append_sheet(ws, model, lang):
     ws.append([label["optional_section"], label["price"], label["select"], label["amount"], label["remark"]])
 
     option_start = ws.max_row + 1
-    options = list(COMMON_OPTIONS)
+    options = list(model.get("special_options", [])) + list(COMMON_OPTIONS)
     if code in {"ZK01", "ZK02", "ZK03", "ZK04"}:
         options.insert(0, MOBILE_OPTION)
 
-    for zh, en, amount in options:
-        item = zh if lang == "zh" else en
+    for option in options:
+        item, amount, remark = option_parts(option, lang)
         row = ws.max_row + 1
-        ws.append([item, amount, UNCHECKED, f'=IF($C{row}="{CHECKED}",$B{row},"")', ""])
+        ws.append([item, amount, UNCHECKED, f'=IF($C{row}="{CHECKED}",$B{row},"")', remark])
 
     option_end = ws.max_row
     ws["B6"] = f'=IF(SUM(D{option_start}:D{option_end})=0,"",SUM(D{option_start}:D{option_end}))'
