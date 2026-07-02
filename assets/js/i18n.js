@@ -400,6 +400,9 @@ const I18N = {
       formMessagePlaceholder: '请描述使用场景、功能需求或预计部署规模...',
       formSubmit: '提交咨询',
       formNote: '具体配置、运输安装、审批及商务条款将在项目沟通阶段确认。',
+      formSending: '正在提交，请稍候...',
+      formConfigMissing: '表单收件邮箱尚未配置，请联系网站管理员填写接收邮箱。',
+      formSendError: '提交失败，请稍后重试或直接拨打联系电话。',
       thanks: '感谢您的咨询！我们将尽快与您联系。'
     }
   },
@@ -803,6 +806,9 @@ const I18N = {
       formMessagePlaceholder: 'Describe use case, functional requirements or expected deployment scale...',
       formSubmit: 'Submit Inquiry',
       formNote: 'Configuration, transport, installation, approvals and commercial terms will be confirmed during project discussion.',
+      formSending: 'Submitting, please wait...',
+      formConfigMissing: 'The receiving email is not configured yet. Please contact the website administrator.',
+      formSendError: 'Submission failed. Please try again later or call us directly.',
       thanks: 'Thank you for your inquiry. We will contact you soon.'
     }
   }

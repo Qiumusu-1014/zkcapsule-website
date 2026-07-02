@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="联系中科国际，提交ZK系列模块化智能太空舱项目需求。">
   <title>联系我们 - 中科国际 - 智慧太空舱</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -49,39 +50,44 @@
 
         <section class="contact-form-area reveal">
           <h2 data-i18n="contact.formTitle">提交项目需求</h2>
-          <form id="inquiryForm">
+          <form id="inquiryForm" action="https://formsubmit.co/ajax/info@zhongkeintl.com" method="POST">
+            <input type="hidden" name="_subject" value="中科国际官网项目需求">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true">
             <div class="form-grid">
               <div class="form-group">
                 <label for="name" data-i18n="contact.formName">姓名</label>
-                <input id="name" name="name" required data-i18n-placeholder="contact.formNamePlaceholder" placeholder="请输入您的姓名">
+                <input id="name" name="姓名" required data-i18n-placeholder="contact.formNamePlaceholder" placeholder="请输入您的姓名">
               </div>
               <div class="form-group">
                 <label for="phone" data-i18n="contact.formPhone">联系电话</label>
-                <input id="phone" name="phone" type="tel" required data-i18n-placeholder="contact.formPhonePlaceholder" placeholder="请输入联系电话">
+                <input id="phone" name="联系电话" type="tel" required data-i18n-placeholder="contact.formPhonePlaceholder" placeholder="请输入联系电话">
               </div>
               <div class="form-group">
                 <label for="company" data-i18n="contact.formCompany">公司</label>
-                <input id="company" name="company" data-i18n-placeholder="contact.formCompanyPlaceholder" placeholder="请输入您的公司名称">
+                <input id="company" name="公司" data-i18n-placeholder="contact.formCompanyPlaceholder" placeholder="请输入您的公司名称">
               </div>
               <div class="form-group">
                 <label for="region" data-i18n="contact.formRegion">项目地区</label>
-                <input id="region" name="region" data-i18n-placeholder="contact.formRegionPlaceholder" placeholder="请输入项目所在地区">
+                <input id="region" name="项目地区" data-i18n-placeholder="contact.formRegionPlaceholder" placeholder="请输入项目所在地区">
               </div>
               <div class="form-group">
                 <label for="productSelect" data-i18n="contact.formInterest">意向型号</label>
-                <select id="productSelect" name="product"></select>
+                <select id="productSelect" name="意向型号"></select>
               </div>
               <div class="form-group">
                 <label for="scenarioSelect" data-i18n="contact.formScenario">应用场景</label>
-                <select id="scenarioSelect" name="scenario"></select>
+                <select id="scenarioSelect" name="应用场景"></select>
               </div>
               <div class="form-group full">
                 <label for="message" data-i18n="contact.formMessage">项目说明</label>
-                <textarea id="message" name="message" data-i18n-placeholder="contact.formMessagePlaceholder" placeholder="请描述使用场景、功能需求或预计部署规模..."></textarea>
+                <textarea id="message" name="项目说明" data-i18n-placeholder="contact.formMessagePlaceholder" placeholder="请描述使用场景、功能需求或预计部署规模..."></textarea>
               </div>
             </div>
             <button class="btn btn-primary" type="submit" data-i18n="contact.formSubmit">提交咨询</button>
             <p class="form-note" data-i18n="contact.formNote">具体配置、运输安装、审批及商务条款将在项目沟通阶段确认。</p>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
         </section>
       </div>
@@ -130,7 +136,41 @@
         renderSelects();
         document.getElementById('inquiryForm').addEventListener('submit', function (event) {
           event.preventDefault();
-          window.alert(ZK.t('contact.thanks'));
+          var form = event.currentTarget;
+          var endpoint = form.getAttribute('action');
+          var status = document.getElementById('formStatus');
+          var button = form.querySelector('button[type="submit"]');
+          var product = document.getElementById('productSelect');
+          var scenario = document.getElementById('scenarioSelect');
+          if (!endpoint || endpoint.indexOf('formsubmit.co/ajax/') === -1) {
+            status.textContent = ZK.t('contact.formConfigMissing');
+            status.className = 'form-status is-error';
+            return;
+          }
+          var data = new FormData(form);
+          data.set('意向型号', product.options[product.selectedIndex] ? product.options[product.selectedIndex].text : '');
+          data.set('应用场景', scenario.options[scenario.selectedIndex] ? scenario.options[scenario.selectedIndex].text : '');
+          data.set('提交页面', window.location.href);
+          data.set('提交时间', new Date().toLocaleString('zh-CN', { hour12: false }));
+          status.textContent = ZK.t('contact.formSending');
+          status.className = 'form-status';
+          button.disabled = true;
+          fetch(endpoint, {
+            method: 'POST',
+            headers: { Accept: 'application/json' },
+            body: data
+          }).then(function (response) {
+            if (!response.ok) throw new Error('Form submit failed');
+            form.reset();
+            renderSelects();
+            status.textContent = ZK.t('contact.thanks');
+            status.className = 'form-status is-success';
+          }).catch(function () {
+            status.textContent = ZK.t('contact.formSendError');
+            status.className = 'form-status is-error';
+          }).finally(function () {
+            button.disabled = false;
+          });
         });
       });
       document.addEventListener('zk:langchange', renderSelects);
