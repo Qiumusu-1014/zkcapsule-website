@@ -1,5 +1,10 @@
 output/
 .cache/
+node_modules/
+dist/
+.next/
+.wrangler/
+public/
 .DS_Store
 Thumbs.db
 *.log
