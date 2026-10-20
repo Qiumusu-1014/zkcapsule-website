@@ -1,0 +1,152 @@
+{
+  "company": "中科国际顾问（香港）有限公司",
+  "date": "2026-10-20",
+  "currency": "CNY",
+  "freight": "买方自付",
+  "items": [
+    {
+      "code": "ZK01",
+      "name": "基础生活舱",
+      "series": "智慧太空舱系列",
+      "area": "约 28㎡",
+      "dimensions": "",
+      "config": "基础生活与净水安防模块可按项目选择。",
+      "price": null
+    },
+    {
+      "code": "ZK02",
+      "name": "绿色豪华舱",
+      "series": "智慧太空舱系列",
+      "area": "约 38㎡",
+      "dimensions": "",
+      "config": "环境舒适、暖通空气与绿色能源模块可选。",
+      "price": null
+    },
+    {
+      "code": "ZK03",
+      "name": "文化教育舱",
+      "series": "智慧太空舱系列",
+      "area": "约 38㎡",
+      "dimensions": "",
+      "config": "通信智能与展示模块可按活动需求组合。",
+      "price": null
+    },
+    {
+      "code": "ZK04",
+      "name": "诊疗医药舱",
+      "series": "智慧太空舱系列",
+      "area": "约 38㎡",
+      "dimensions": "",
+      "config": "诊疗设备与医疗服务能力须依据当地合规要求确认。",
+      "price": null
+    },
+    {
+      "code": "ZK05",
+      "name": "露台舱",
+      "series": "智慧太空舱系列",
+      "area": "按项目确认",
+      "dimensions": "",
+      "config": "内部装修与露台配置根据项目场地和运营需求确认。",
+      "price": null
+    },
+    {
+      "code": "ZK06",
+      "name": "叠加度假套房舱",
+      "series": "智慧太空舱系列",
+      "area": "单舱约 32㎡；双层约 64㎡",
+      "dimensions": "",
+      "config": "叠加结构、吊装、消防及审批要求须由项目专项确认。",
+      "price": null
+    },
+    {
+      "code": "ZK07",
+      "name": "商业服务舱",
+      "series": "智慧太空舱系列",
+      "area": "约 18-30㎡",
+      "dimensions": "",
+      "config": "生活服务、商业设备与安防模块可选。",
+      "price": null
+    },
+    {
+      "code": "ZK08",
+      "name": "应急指挥舱",
+      "series": "智慧太空舱系列",
+      "area": "约 28-40㎡",
+      "dimensions": "",
+      "config": "通信、能源及应急装备按任务需求确认。",
+      "price": null
+    },
+    {
+      "code": "ZK09",
+      "name": "旗舰定制舱",
+      "series": "智慧太空舱系列",
+      "area": "38-44㎡",
+      "dimensions": "",
+      "config": "空间组合与高端配置依照项目需求深化。",
+      "price": null
+    },
+    {
+      "code": "ABADI",
+      "name": "高端定制智慧太空舱",
+      "series": "智慧太空舱系列",
+      "area": "按项目定制",
+      "dimensions": "",
+      "config": "不预设未确认规格，最终配置以项目沟通及确认文件为准。",
+      "price": null
+    },
+    {
+      "code": "ZK-ME",
+      "name": "优选舱",
+      "series": "民宿系列",
+      "area": "",
+      "dimensions": "",
+      "config": "家具家电、光伏储能与净水可独立选配。",
+      "price": null
+    },
+    {
+      "code": "ZK-M22",
+      "name": "经典观景舱",
+      "series": "民宿系列",
+      "area": "22.44㎡",
+      "dimensions": "6800×3300×3200毫米",
+      "config": "包含美的空调、即热式热水器及对应标配卫浴；家具、光伏储能与净水独立选配。",
+      "price": 199750
+    },
+    {
+      "code": "ZK-M28",
+      "name": "全景大床舱",
+      "series": "民宿系列",
+      "area": "28㎡",
+      "dimensions": "8500×3300×3200毫米",
+      "config": "包含美的空调、即热式热水器及对应标配卫浴；家具、光伏储能与净水独立选配。",
+      "price": 221200
+    },
+    {
+      "code": "ZK-M28T",
+      "name": "全景双床舱",
+      "series": "民宿系列",
+      "area": "",
+      "dimensions": "",
+      "config": "家具家电、光伏储能与净水可独立选配。",
+      "price": null
+    },
+    {
+      "code": "ZK-M38",
+      "name": "家庭观景舱",
+      "series": "民宿系列",
+      "area": "38㎡",
+      "dimensions": "11500×3300×3200毫米",
+      "config": "包含美的空调、即热式热水器及对应标配卫浴；家具、光伏储能与净水独立选配。",
+      "price": 255850
+    },
+    {
+      "code": "ZK-MF",
+      "name": "全景旗舰舱",
+      "series": "民宿系列",
+      "area": "",
+      "dimensions": "",
+      "config": "家具家电、光伏储能与净水可独立选配。",
+      "price": null
+    }
+  ]
+}

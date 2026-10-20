@@ -38,7 +38,7 @@
               '<ul class="footer-meta">',
                 '<li><span data-i18n="footer.registrationLabel">注册证号</span><strong data-i18n="footer.registrationNo">78386327</strong></li>',
                 '<li><span data-i18n="footer.phoneLabel">联系电话</span><strong data-i18n="footer.phone">杨涛峰 13319274381</strong></li>',
-                '<li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼</strong></li>',
+                '<li><span data-i18n="footer.addressLabel">地址</span><strong data-i18n="footer.address">香港尖沙咀麼地道75号南洋中心2座7楼703室</strong></li>',
               '</ul>',
             '</div>',
             '<div class="footer-col">',
@@ -59,7 +59,7 @@
               '<a href="contact.html" class="footer-inquiry" data-i18n="footer.contactUs">联系我们</a>',
             '</div>',
           '</div>',
-          '<div class="footer-bottom"><span data-i18n="footer.copyright">© 2026 中科国际 版权所有</span><span>Smart Capsule Series</span></div>',
+          '<div class="footer-bottom"><span data-i18n="footer.copyright">© 2026 中科国际 版权所有</span><span data-i18n="footer.series">智慧太空舱 · 民宿系列</span></div>',
         '</div>',
       '</footer>'
     ].join('');

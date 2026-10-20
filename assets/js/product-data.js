@@ -76,7 +76,7 @@
           { src: 'assets/media/video/ZK01-web-20s.mp4', poster: 'assets/media/products/ZK01-exterior.webp', captionKey: 'gallery.videoTitle1' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK01-quotation.xlsx'
+        quoteUrl: ''
       },
       zk02: {
         code: 'ZK02',
@@ -101,7 +101,7 @@
         ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK02-quotation.xlsx'
+        quoteUrl: ''
       },
       zk03: {
         code: 'ZK03',
@@ -127,7 +127,7 @@
         ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK03-quotation.xlsx'
+        quoteUrl: ''
       },
       zk04: {
         code: 'ZK04',
@@ -151,7 +151,7 @@
         ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK04-quotation.xlsx'
+        quoteUrl: ''
       },
       zk05: {
         code: 'ZK05',
@@ -186,7 +186,7 @@
           { src: 'assets/media/video/ZK05-web.mp4', poster: 'assets/media/products/ZK05-exterior.webp', captionKey: 'gallery.videoZK05' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK05-quotation.xlsx'
+        quoteUrl: ''
       },
       zk06: {
         code: 'ZK06',
@@ -218,7 +218,7 @@
           { src: 'assets/media/video/ZK06-web.mp4', poster: 'assets/media/products/ZK06-exterior.webp', captionKey: 'gallery.videoZK06' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK06-quotation.xlsx',
+        quoteUrl: '',
         featured: true
       },
       zk07: {
@@ -245,7 +245,7 @@
           { src: 'assets/media/video/ZK07-web.mp4', poster: 'assets/media/products/ZK07-exterior.webp', captionKey: 'gallery.videoZK07' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK07-quotation.xlsx'
+        quoteUrl: ''
       },
       zk08: {
         code: 'ZK08',
@@ -272,7 +272,7 @@
           { src: 'assets/media/video/ZK08-web.mp4', poster: 'assets/media/products/ZK08-exterior.webp', captionKey: 'gallery.videoZK08' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK08-quotation.xlsx'
+        quoteUrl: ''
       },
       zk09: {
         code: 'ZK09',
@@ -302,7 +302,7 @@
           { src: 'assets/media/video/ZK09-web.mp4', poster: 'assets/media/products/ZK09-exterior.webp', captionKey: 'gallery.videoZK09' }
         ],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ZK09-quotation.xlsx'
+        quoteUrl: ''
       },
       abadi: {
         code: 'ABADI',
@@ -328,8 +328,635 @@
         ],
         videos: [],
         quoteStatusKey: 'products.quotePending',
-        quoteUrl: 'assets/files/quotes/ABADI-quotation.xlsx'
+        quoteUrl: ''
       }
     }
   };
+  /* Hospitality series appended after the established smart-capsule range. */
+  var catalog = window.ZK_PRODUCT_MODELS;
+  var hospitality = {
+  "zk-me": {
+    "code": "ZK-ME",
+    "nameKey": "models.zk-me.name",
+    "taglineKey": "models.zk-me.tagline",
+    "areaKey": "models.zk-me.area",
+    "useKey": "models.zk-me.use",
+    "summaryKey": "models.zk-me.summary",
+    "exteriorKey": "models.zk-me.exterior",
+    "interiorKey": "models.zk-me.interior",
+    "configKey": "models.zk-me.config",
+    "dimensionsKey": "models.zk-me.dimensions",
+    "seriesKey": "models.zk-me.series",
+    "image": "assets/media/products/ZK-ME-01.webp",
+    "gallery": [
+      {
+        "src": "assets/media/products/ZK-ME-01.webp",
+        "captionKey": "gallery.imgZKME01",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-ME-02.webp",
+        "captionKey": "gallery.imgZKME02",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-ME-03.webp",
+        "captionKey": "gallery.imgZKME03",
+        "kind": "layout"
+      }
+    ],
+    "interiors": [
+      {
+        "src": "assets/media/products/ZK-ME-02.webp",
+        "captionKey": "gallery.imgZKME02",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-ME-03.webp",
+        "captionKey": "gallery.imgZKME03",
+        "kind": "layout"
+      }
+    ],
+    "videos": [],
+    "quoteStatusKey": "products.quotePending",
+    "quoteUrl": ""
+  },
+  "zk-m22": {
+    "code": "ZK-M22",
+    "nameKey": "models.zk-m22.name",
+    "taglineKey": "models.zk-m22.tagline",
+    "areaKey": "models.zk-m22.area",
+    "useKey": "models.zk-m22.use",
+    "summaryKey": "models.zk-m22.summary",
+    "exteriorKey": "models.zk-m22.exterior",
+    "interiorKey": "models.zk-m22.interior",
+    "configKey": "models.zk-m22.config",
+    "dimensionsKey": "models.zk-m22.dimensions",
+    "seriesKey": "models.zk-m22.series",
+    "image": "assets/media/products/ZK-M22-01.webp",
+    "gallery": [
+      {
+        "src": "assets/media/products/ZK-M22-01.webp",
+        "captionKey": "gallery.imgZKM2201",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-02.webp",
+        "captionKey": "gallery.imgZKM2202",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-03.webp",
+        "captionKey": "gallery.imgZKM2203",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-04.webp",
+        "captionKey": "gallery.imgZKM2204",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-05.webp",
+        "captionKey": "gallery.imgZKM2205",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-06.webp",
+        "captionKey": "gallery.imgZKM2206",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-07.webp",
+        "captionKey": "gallery.imgZKM2207",
+        "kind": "layout"
+      }
+    ],
+    "interiors": [
+      {
+        "src": "assets/media/products/ZK-M22-04.webp",
+        "captionKey": "gallery.imgZKM2204",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-05.webp",
+        "captionKey": "gallery.imgZKM2205",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-06.webp",
+        "captionKey": "gallery.imgZKM2206",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M22-07.webp",
+        "captionKey": "gallery.imgZKM2207",
+        "kind": "layout"
+      }
+    ],
+    "videos": [],
+    "quoteStatusKey": "products.quotePending",
+    "quoteUrl": ""
+  },
+  "zk-m28": {
+    "code": "ZK-M28",
+    "nameKey": "models.zk-m28.name",
+    "taglineKey": "models.zk-m28.tagline",
+    "areaKey": "models.zk-m28.area",
+    "useKey": "models.zk-m28.use",
+    "summaryKey": "models.zk-m28.summary",
+    "exteriorKey": "models.zk-m28.exterior",
+    "interiorKey": "models.zk-m28.interior",
+    "configKey": "models.zk-m28.config",
+    "dimensionsKey": "models.zk-m28.dimensions",
+    "seriesKey": "models.zk-m28.series",
+    "image": "assets/media/products/ZK-M28-01.webp",
+    "gallery": [
+      {
+        "src": "assets/media/products/ZK-M28-01.webp",
+        "captionKey": "gallery.imgZKM2801",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-02.webp",
+        "captionKey": "gallery.imgZKM2802",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-03.webp",
+        "captionKey": "gallery.imgZKM2803",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-04.webp",
+        "captionKey": "gallery.imgZKM2804",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-05.webp",
+        "captionKey": "gallery.imgZKM2805",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-06.webp",
+        "captionKey": "gallery.imgZKM2806",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-07.webp",
+        "captionKey": "gallery.imgZKM2807",
+        "kind": "interior"
+      }
+    ],
+    "interiors": [
+      {
+        "src": "assets/media/products/ZK-M28-04.webp",
+        "captionKey": "gallery.imgZKM2804",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-05.webp",
+        "captionKey": "gallery.imgZKM2805",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-06.webp",
+        "captionKey": "gallery.imgZKM2806",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28-07.webp",
+        "captionKey": "gallery.imgZKM2807",
+        "kind": "interior"
+      }
+    ],
+    "videos": [],
+    "quoteStatusKey": "products.quotePending",
+    "quoteUrl": ""
+  },
+  "zk-m28t": {
+    "code": "ZK-M28T",
+    "nameKey": "models.zk-m28t.name",
+    "taglineKey": "models.zk-m28t.tagline",
+    "areaKey": "models.zk-m28t.area",
+    "useKey": "models.zk-m28t.use",
+    "summaryKey": "models.zk-m28t.summary",
+    "exteriorKey": "models.zk-m28t.exterior",
+    "interiorKey": "models.zk-m28t.interior",
+    "configKey": "models.zk-m28t.config",
+    "dimensionsKey": "models.zk-m28t.dimensions",
+    "seriesKey": "models.zk-m28t.series",
+    "image": "assets/media/products/ZK-M28T-01.webp",
+    "gallery": [
+      {
+        "src": "assets/media/products/ZK-M28T-01.webp",
+        "captionKey": "gallery.imgZKM28T01",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-02.webp",
+        "captionKey": "gallery.imgZKM28T02",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-03.webp",
+        "captionKey": "gallery.imgZKM28T03",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-04.webp",
+        "captionKey": "gallery.imgZKM28T04",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-05.webp",
+        "captionKey": "gallery.imgZKM28T05",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-06.webp",
+        "captionKey": "gallery.imgZKM28T06",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-07.webp",
+        "captionKey": "gallery.imgZKM28T07",
+        "kind": "interior"
+      }
+    ],
+    "interiors": [
+      {
+        "src": "assets/media/products/ZK-M28T-04.webp",
+        "captionKey": "gallery.imgZKM28T04",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-05.webp",
+        "captionKey": "gallery.imgZKM28T05",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-06.webp",
+        "captionKey": "gallery.imgZKM28T06",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M28T-07.webp",
+        "captionKey": "gallery.imgZKM28T07",
+        "kind": "interior"
+      }
+    ],
+    "videos": [],
+    "quoteStatusKey": "products.quotePending",
+    "quoteUrl": ""
+  },
+  "zk-m38": {
+    "code": "ZK-M38",
+    "nameKey": "models.zk-m38.name",
+    "taglineKey": "models.zk-m38.tagline",
+    "areaKey": "models.zk-m38.area",
+    "useKey": "models.zk-m38.use",
+    "summaryKey": "models.zk-m38.summary",
+    "exteriorKey": "models.zk-m38.exterior",
+    "interiorKey": "models.zk-m38.interior",
+    "configKey": "models.zk-m38.config",
+    "dimensionsKey": "models.zk-m38.dimensions",
+    "seriesKey": "models.zk-m38.series",
+    "image": "assets/media/products/ZK-M38-01.webp",
+    "gallery": [
+      {
+        "src": "assets/media/products/ZK-M38-01.webp",
+        "captionKey": "gallery.imgZKM3801",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-02.webp",
+        "captionKey": "gallery.imgZKM3802",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-03.webp",
+        "captionKey": "gallery.imgZKM3803",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-04.webp",
+        "captionKey": "gallery.imgZKM3804",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-05.webp",
+        "captionKey": "gallery.imgZKM3805",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-06.webp",
+        "captionKey": "gallery.imgZKM3806",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-07.webp",
+        "captionKey": "gallery.imgZKM3807",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-08.webp",
+        "captionKey": "gallery.imgZKM3808",
+        "kind": "exterior"
+      }
+    ],
+    "interiors": [
+      {
+        "src": "assets/media/products/ZK-M38-03.webp",
+        "captionKey": "gallery.imgZKM3803",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-04.webp",
+        "captionKey": "gallery.imgZKM3804",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-05.webp",
+        "captionKey": "gallery.imgZKM3805",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-06.webp",
+        "captionKey": "gallery.imgZKM3806",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-M38-07.webp",
+        "captionKey": "gallery.imgZKM3807",
+        "kind": "interior"
+      }
+    ],
+    "videos": [],
+    "quoteStatusKey": "products.quotePending",
+    "quoteUrl": ""
+  },
+  "zk-mf": {
+    "code": "ZK-MF",
+    "nameKey": "models.zk-mf.name",
+    "taglineKey": "models.zk-mf.tagline",
+    "areaKey": "models.zk-mf.area",
+    "useKey": "models.zk-mf.use",
+    "summaryKey": "models.zk-mf.summary",
+    "exteriorKey": "models.zk-mf.exterior",
+    "interiorKey": "models.zk-mf.interior",
+    "configKey": "models.zk-mf.config",
+    "dimensionsKey": "models.zk-mf.dimensions",
+    "seriesKey": "models.zk-mf.series",
+    "image": "assets/media/products/ZK-MF-01.webp",
+    "gallery": [
+      {
+        "src": "assets/media/products/ZK-MF-01.webp",
+        "captionKey": "gallery.imgZKMF01",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-02.webp",
+        "captionKey": "gallery.imgZKMF02",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-03.webp",
+        "captionKey": "gallery.imgZKMF03",
+        "kind": "exterior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-04.webp",
+        "captionKey": "gallery.imgZKMF04",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-05.webp",
+        "captionKey": "gallery.imgZKMF05",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-06.webp",
+        "captionKey": "gallery.imgZKMF06",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-07.webp",
+        "captionKey": "gallery.imgZKMF07",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-08.webp",
+        "captionKey": "gallery.imgZKMF08",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-09.webp",
+        "captionKey": "gallery.imgZKMF09",
+        "kind": "interior"
+      }
+    ],
+    "interiors": [
+      {
+        "src": "assets/media/products/ZK-MF-04.webp",
+        "captionKey": "gallery.imgZKMF04",
+        "kind": "layout"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-05.webp",
+        "captionKey": "gallery.imgZKMF05",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-06.webp",
+        "captionKey": "gallery.imgZKMF06",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-07.webp",
+        "captionKey": "gallery.imgZKMF07",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-08.webp",
+        "captionKey": "gallery.imgZKMF08",
+        "kind": "interior"
+      },
+      {
+        "src": "assets/media/products/ZK-MF-09.webp",
+        "captionKey": "gallery.imgZKMF09",
+        "kind": "interior"
+      }
+    ],
+    "videos": [],
+    "quoteStatusKey": "products.quotePending",
+    "quoteUrl": ""
+  }
+};
+  var hospitalityIds = Object.keys(hospitality);
+  hospitalityIds.forEach(function (id) { catalog.items[id] = hospitality[id]; });
+  catalog.order = catalog.order.concat(hospitalityIds);
+  catalog.categories.all = catalog.order.slice();
+  catalog.categories.smart = catalog.order.slice(0, 10);
+  catalog.categories.hospitality = hospitalityIds.slice();
+  catalog.categories.stay = catalog.categories.stay.concat(hospitalityIds);
+  catalog.interiorShowcase = catalog.interiorShowcase.concat([
+  {
+    "src": "assets/media/products/ZK-ME-02.webp",
+    "captionKey": "gallery.imgZKME02",
+    "kind": "layout",
+    "code": "ZK-ME"
+  },
+  {
+    "src": "assets/media/products/ZK-ME-03.webp",
+    "captionKey": "gallery.imgZKME03",
+    "kind": "layout",
+    "code": "ZK-ME"
+  },
+  {
+    "src": "assets/media/products/ZK-M22-04.webp",
+    "captionKey": "gallery.imgZKM2204",
+    "kind": "layout",
+    "code": "ZK-M22"
+  },
+  {
+    "src": "assets/media/products/ZK-M22-05.webp",
+    "captionKey": "gallery.imgZKM2205",
+    "kind": "interior",
+    "code": "ZK-M22"
+  },
+  {
+    "src": "assets/media/products/ZK-M22-06.webp",
+    "captionKey": "gallery.imgZKM2206",
+    "kind": "interior",
+    "code": "ZK-M22"
+  },
+  {
+    "src": "assets/media/products/ZK-M22-07.webp",
+    "captionKey": "gallery.imgZKM2207",
+    "kind": "layout",
+    "code": "ZK-M22"
+  },
+  {
+    "src": "assets/media/products/ZK-M28-04.webp",
+    "captionKey": "gallery.imgZKM2804",
+    "kind": "layout",
+    "code": "ZK-M28"
+  },
+  {
+    "src": "assets/media/products/ZK-M28-05.webp",
+    "captionKey": "gallery.imgZKM2805",
+    "kind": "interior",
+    "code": "ZK-M28"
+  },
+  {
+    "src": "assets/media/products/ZK-M28-06.webp",
+    "captionKey": "gallery.imgZKM2806",
+    "kind": "interior",
+    "code": "ZK-M28"
+  },
+  {
+    "src": "assets/media/products/ZK-M28-07.webp",
+    "captionKey": "gallery.imgZKM2807",
+    "kind": "interior",
+    "code": "ZK-M28"
+  },
+  {
+    "src": "assets/media/products/ZK-M28T-04.webp",
+    "captionKey": "gallery.imgZKM28T04",
+    "kind": "layout",
+    "code": "ZK-M28T"
+  },
+  {
+    "src": "assets/media/products/ZK-M28T-05.webp",
+    "captionKey": "gallery.imgZKM28T05",
+    "kind": "interior",
+    "code": "ZK-M28T"
+  },
+  {
+    "src": "assets/media/products/ZK-M28T-06.webp",
+    "captionKey": "gallery.imgZKM28T06",
+    "kind": "interior",
+    "code": "ZK-M28T"
+  },
+  {
+    "src": "assets/media/products/ZK-M28T-07.webp",
+    "captionKey": "gallery.imgZKM28T07",
+    "kind": "interior",
+    "code": "ZK-M28T"
+  },
+  {
+    "src": "assets/media/products/ZK-M38-03.webp",
+    "captionKey": "gallery.imgZKM3803",
+    "kind": "layout",
+    "code": "ZK-M38"
+  },
+  {
+    "src": "assets/media/products/ZK-M38-04.webp",
+    "captionKey": "gallery.imgZKM3804",
+    "kind": "interior",
+    "code": "ZK-M38"
+  },
+  {
+    "src": "assets/media/products/ZK-M38-05.webp",
+    "captionKey": "gallery.imgZKM3805",
+    "kind": "interior",
+    "code": "ZK-M38"
+  },
+  {
+    "src": "assets/media/products/ZK-M38-06.webp",
+    "captionKey": "gallery.imgZKM3806",
+    "kind": "interior",
+    "code": "ZK-M38"
+  },
+  {
+    "src": "assets/media/products/ZK-M38-07.webp",
+    "captionKey": "gallery.imgZKM3807",
+    "kind": "interior",
+    "code": "ZK-M38"
+  },
+  {
+    "src": "assets/media/products/ZK-MF-04.webp",
+    "captionKey": "gallery.imgZKMF04",
+    "kind": "layout",
+    "code": "ZK-MF"
+  },
+  {
+    "src": "assets/media/products/ZK-MF-05.webp",
+    "captionKey": "gallery.imgZKMF05",
+    "kind": "interior",
+    "code": "ZK-MF"
+  },
+  {
+    "src": "assets/media/products/ZK-MF-06.webp",
+    "captionKey": "gallery.imgZKMF06",
+    "kind": "interior",
+    "code": "ZK-MF"
+  },
+  {
+    "src": "assets/media/products/ZK-MF-07.webp",
+    "captionKey": "gallery.imgZKMF07",
+    "kind": "interior",
+    "code": "ZK-MF"
+  },
+  {
+    "src": "assets/media/products/ZK-MF-08.webp",
+    "captionKey": "gallery.imgZKMF08",
+    "kind": "interior",
+    "code": "ZK-MF"
+  },
+  {
+    "src": "assets/media/products/ZK-MF-09.webp",
+    "captionKey": "gallery.imgZKMF09",
+    "kind": "interior",
+    "code": "ZK-MF"
+  }
+]);
+  catalog.order.forEach(function (id, index) {
+    var model = catalog.items[id];
+    model.seriesKey = model.seriesKey || 'products.smartSeries';
+    var hasPublishedQuotation = ['ZK-M22', 'ZK-M28', 'ZK-M38'].indexOf(model.code) !== -1;
+    model.quoteUrl = hasPublishedQuotation ? 'assets/files/中科太空舱报价及配置选单.docx' : '';
+    model.quoteUrlEn = hasPublishedQuotation ? 'assets/files/Zhongke-Quotation-and-Options-EN.docx' : '';
+  });
+
 })();

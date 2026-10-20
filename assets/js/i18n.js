@@ -31,7 +31,7 @@ const I18N = {
       phoneLabel: '联系电话',
       phone: '杨涛峰 13319274381',
       addressLabel: '地址',
-      address: '香港尖沙咀麼地道75号南洋中心2座7楼'
+      address: '香港尖沙咀麼地道75号南洋中心2座7楼703室'
     },
     home: {
       companyName: '中科国际',
@@ -71,7 +71,7 @@ const I18N = {
       strength4Title: '功能扩展能力',
       strength4Text: '从基础单舱到叠加和复合空间，按项目持续深化。',
       lineupTitle: '正式产品系列',
-      lineupSubtitle: 'ZK01-ZK09 与 ABADI 覆盖日常居住、绿色度假、展示教育、医疗服务、露台住宿、叠加度假、商业服务、应急保障与高端定制。',
+      lineupSubtitle: '智慧太空舱与民宿两大系列，共16款型号，覆盖住宿度假、教育医疗、商业应急与定制空间。',
       productLink: '查看全部产品',
       featuredTag: '重点产品',
       featuredTitle: 'ZK06 叠加度假套房舱',
@@ -101,7 +101,7 @@ const I18N = {
       faq2Q: '网页中的面积与配置是否为最终交付标准？',
       faq2A: '页面所列面积与配置为方案建议，最终尺寸、设备和工程要求以双方确认的项目文件为准。',
       faq3Q: '如何获取型号报价单？',
-      faq3A: '产品中心与详情页已提供 ZK01-ZK09 分型号参考报价单下载。页面报价为参考，最终价格以合同或确认采购清单为准。',
+      faq3A: '产品中心与产品影像页面提供中英文产品图集及报价配置选单下载。运费由买方按实际出运时运价自付，港口由买方指定。',
       ctaTitle: '获取专属项目方案',
       ctaText: '提交目标场景与意向型号，推进选型、配置与报价沟通。',
       modules: ['生活居住', '环境舒适', '暖通空气', '绿色能源', '通信智能', '净水安防', '诊疗医药'],
@@ -118,7 +118,7 @@ const I18N = {
       video1: '生产现场影像 01',
       video2: '制造过程影像 02',
       video3: '生产现场影像 03',
-      stat1: '10',
+      stat1: '16',
       stat1Label: '完整产品矩阵',
       stat2: '5',
       stat2Label: '重点应用场景',
@@ -146,7 +146,7 @@ const I18N = {
     products: {
       title: '产品中心',
       subtitle: '中科正式产品系列覆盖多类真实使用场景。各型号面积与功能为产品方案建议，具体交付以项目确认方案为准。',
-      lineupTitle: '十型号产品矩阵',
+      lineupTitle: '十六型号产品矩阵',
       lineupSubtitle: '按使用场景筛选产品，查看正式影像、核心定位与配置方向。',
       viewDetails: '查看详情',
       noImage: '正式影像待补充',
@@ -372,7 +372,7 @@ const I18N = {
       phoneLabel: '联系电话',
       phoneValue: '13319274381',
       addressLabel: '地址',
-      addressValue: '香港尖沙咀麼地道75号南洋中心2座7楼',
+      addressValue: '香港尖沙咀麼地道75号南洋中心2座7楼703室',
       registrationLabel: '注册证号',
       registrationNo: '78386327',
       directTag: '项目咨询',
@@ -437,7 +437,7 @@ const I18N = {
       phoneLabel: 'Phone',
       phone: 'Yang Taofeng 13319274381',
       addressLabel: 'Address',
-      address: '7/F, Tower 2, South Seas Centre, 75 Mody Road, Tsim Sha Tsui, Kowloon, Hong Kong'
+      address: 'Unit 703, 7/F, Tower 2, South Seas Centre, 75 Mody Road, Tsim Sha Tsui, Hong Kong'
     },
     home: {
       companyName: '中科国际',
@@ -477,7 +477,7 @@ const I18N = {
       strength4Title: 'Expandable Formats',
       strength4Text: 'From a basic single capsule to stacked and composite spaces developed per project.',
       lineupTitle: 'Official Product Series',
-      lineupSubtitle: 'ZK01-ZK09 and ABADI cover living, green resorts, education, healthcare, terrace accommodation, stacked resorts, commerce, emergency response and premium customization.',
+      lineupSubtitle: 'Sixteen models across the Smart Capsule and Hospitality series support accommodation, education, healthcare, commerce, emergency response and customized spaces.',
       productLink: 'View All Products',
       featuredTag: 'Featured Product',
       featuredTitle: 'ZK06 Stacked Resort Suite',
@@ -507,7 +507,7 @@ const I18N = {
       faq2Q: 'Are dimensions and configurations on this site final specifications?',
       faq2A: 'Listed dimensions and configurations are proposal references. Final equipment and engineering requirements follow confirmed project documents.',
       faq3Q: 'How can I obtain a model quotation sheet?',
-      faq3A: 'Reference quotation sheets for ZK01-ZK09 are available on product pages. Page prices are for reference only; final pricing is subject to the contract or confirmed procurement list.',
+      faq3A: 'English and Chinese product catalogs and quotation/options documents are available on the product pages. Freight is paid directly by the buyer at the rate applicable on shipment; the buyer specifies the port.',
       ctaTitle: 'Request Your Project Solution',
       ctaText: 'Share your target scenario and preferred model to begin selection, configuration and quotation discussions.',
       modules: ['Living', 'Comfort', 'HVAC & Air', 'Green Energy', 'Communication & Smart', 'Water & Security', 'Medical'],
@@ -524,7 +524,7 @@ const I18N = {
       video1: 'Production Site Footage 01',
       video2: 'Manufacturing Footage 02',
       video3: 'Production Site Footage 03',
-      stat1: '10',
+      stat1: '16',
       stat1Label: 'Complete Lineup',
       stat2: '5',
       stat2Label: 'Priority Scenarios',
@@ -552,7 +552,7 @@ const I18N = {
     products: {
       title: 'Product Center',
       subtitle: 'The official Zhongke series serves diverse real-world needs. Areas and functions are proposal references; final delivery follows the confirmed project solution.',
-      lineupTitle: 'Ten-Model Product Matrix',
+      lineupTitle: 'Sixteen-Model Product Matrix',
       lineupSubtitle: 'Filter by scenario and explore confirmed imagery, positioning and configuration directions.',
       viewDetails: 'View Details',
       noImage: 'Official media forthcoming',
@@ -778,7 +778,7 @@ const I18N = {
       phoneLabel: 'Phone',
       phoneValue: '13319274381',
       addressLabel: 'Address',
-      addressValue: '7/F, Tower 2, South Seas Centre, 75 Mody Road, Tsim Sha Tsui, Kowloon, Hong Kong',
+      addressValue: 'Unit 703, 7/F, Tower 2, South Seas Centre, 75 Mody Road, Tsim Sha Tsui, Hong Kong',
       registrationLabel: 'Registration No.',
       registrationNo: '78386327',
       directTag: 'Project Inquiry',
@@ -813,3 +813,255 @@ const I18N = {
     }
   }
 };
+
+Object.assign(I18N.zh.models, {
+  "zk-me": {
+    "area": "",
+    "dimensions": "",
+    "use": "紧凑型住宿与营地空间",
+    "summary": "紧凑型空间，配有景观开窗与室内生活布局。",
+    "exterior": "景观开窗与模块化舱体外观。",
+    "interior": "紧凑型空间，配有景观开窗与室内生活布局。",
+    "config": "家具家电、光伏储能与净水可独立选配。",
+    "tagline": "紧凑型空间，配有景观开窗与室内生活布局。",
+    "name": "优选舱",
+    "series": "民宿系列"
+  },
+  "zk-m22": {
+    "area": "22.44㎡",
+    "dimensions": "6800×3300×3200毫米",
+    "use": "景观住宿、营地客房",
+    "summary": "经典观景空间，采用独立生活与卫浴布局。",
+    "exterior": "景观开窗与模块化舱体外观。",
+    "interior": "经典观景空间，采用独立生活与卫浴布局。",
+    "config": "包含美的空调、即热式热水器及对应标配卫浴；家具、光伏储能与净水独立选配。",
+    "tagline": "经典观景空间，采用独立生活与卫浴布局。",
+    "name": "经典观景舱",
+    "series": "民宿系列"
+  },
+  "zk-m28": {
+    "area": "28㎡",
+    "dimensions": "8500×3300×3200毫米",
+    "use": "全景大床住宿、度假客房",
+    "summary": "全景观景面与大床住宿布局。",
+    "exterior": "景观开窗与模块化舱体外观。",
+    "interior": "全景观景面与大床住宿布局。",
+    "config": "包含美的空调、即热式热水器及对应标配卫浴；家具、光伏储能与净水独立选配。",
+    "tagline": "全景观景面与大床住宿布局。",
+    "name": "全景大床舱",
+    "series": "民宿系列"
+  },
+  "zk-m28t": {
+    "area": "",
+    "dimensions": "",
+    "use": "双床住宿、营地客房",
+    "summary": "双床房布局与全景观景空间。",
+    "exterior": "景观开窗与模块化舱体外观。",
+    "interior": "双床房布局与全景观景空间。",
+    "config": "家具家电、光伏储能与净水可独立选配。",
+    "tagline": "双床房布局与全景观景空间。",
+    "name": "全景双床舱",
+    "series": "民宿系列"
+  },
+  "zk-m38": {
+    "area": "38㎡",
+    "dimensions": "11500×3300×3200毫米",
+    "use": "家庭住宿、度假客房",
+    "summary": "加长家庭观景空间，组织卧室、起居与卫浴。",
+    "exterior": "景观开窗与模块化舱体外观。",
+    "interior": "加长家庭观景空间，组织卧室、起居与卫浴。",
+    "config": "包含美的空调、即热式热水器及对应标配卫浴；家具、光伏储能与净水独立选配。",
+    "tagline": "加长家庭观景空间，组织卧室、起居与卫浴。",
+    "name": "家庭观景舱",
+    "series": "民宿系列"
+  },
+  "zk-mf": {
+    "area": "",
+    "dimensions": "",
+    "use": "全景住宿、度假空间",
+    "summary": "全景开窗与卧室、起居空间布局。",
+    "exterior": "景观开窗与模块化舱体外观。",
+    "interior": "全景开窗与卧室、起居空间布局。",
+    "config": "家具家电、光伏储能与净水可独立选配。",
+    "tagline": "全景开窗与卧室、起居空间布局。",
+    "name": "全景旗舰舱",
+    "series": "民宿系列"
+  }
+});
+Object.assign(I18N.zh.gallery, {
+  "imgZKME01": "ZK-ME 外观效果图",
+  "imgZKME02": "ZK-ME 平面尺寸图",
+  "imgZKME03": "ZK-ME 俯视布局效果图",
+  "imgZKM2201": "ZK-M22 外观效果图",
+  "imgZKM2202": "ZK-M22 外观效果图",
+  "imgZKM2203": "ZK-M22 外观效果图",
+  "imgZKM2204": "ZK-M22 俯视布局效果图",
+  "imgZKM2205": "ZK-M22 室内效果图",
+  "imgZKM2206": "ZK-M22 卫浴内景",
+  "imgZKM2207": "ZK-M22 平面尺寸图",
+  "imgZKM2801": "ZK-M28 外观效果图",
+  "imgZKM2802": "ZK-M28 外观效果图",
+  "imgZKM2803": "ZK-M28 外观效果图",
+  "imgZKM2804": "ZK-M28 俯视布局效果图",
+  "imgZKM2805": "ZK-M28 室内效果图",
+  "imgZKM2806": "ZK-M28 室内效果图",
+  "imgZKM2807": "ZK-M28 卫浴内景",
+  "imgZKM28T01": "ZK-M28T 外观效果图",
+  "imgZKM28T02": "ZK-M28T 外观效果图",
+  "imgZKM28T03": "ZK-M28T 外观效果图",
+  "imgZKM28T04": "ZK-M28T 俯视布局效果图",
+  "imgZKM28T05": "ZK-M28T 室内效果图",
+  "imgZKM28T06": "ZK-M28T 室内效果图",
+  "imgZKM28T07": "ZK-M28T 卫浴内景",
+  "imgZKM3801": "ZK-M38 外观效果图",
+  "imgZKM3802": "ZK-M38 外观效果图",
+  "imgZKM3803": "ZK-M38 俯视布局效果图",
+  "imgZKM3804": "ZK-M38 室内效果图",
+  "imgZKM3805": "ZK-M38 室内效果图",
+  "imgZKM3806": "ZK-M38 卫浴内景",
+  "imgZKM3807": "ZK-M38 卫浴内景",
+  "imgZKM3808": "ZK-M38 外观实拍",
+  "imgZKMF01": "ZK-MF 外观效果图",
+  "imgZKMF02": "ZK-MF 外观效果图",
+  "imgZKMF03": "ZK-MF 外观效果图",
+  "imgZKMF04": "ZK-MF 俯视布局效果图",
+  "imgZKMF05": "ZK-MF 室内效果图",
+  "imgZKMF06": "ZK-MF 室内效果图",
+  "imgZKMF07": "ZK-MF 卫浴内景",
+  "imgZKMF08": "ZK-MF 卫浴内景",
+  "imgZKMF09": "ZK-MF 室内效果图"
+});
+
+Object.assign(I18N.en.models, {
+  "zk-me": {
+    "name": "Compact Capsule",
+    "area": "",
+    "dimensions": "",
+    "use": "Compact accommodation and camp spaces",
+    "summary": "A compact capsule with viewing windows and a practical living layout.",
+    "tagline": "A compact capsule with viewing windows and a practical living layout.",
+    "exterior": "Viewing windows and a modular capsule exterior.",
+    "interior": "A compact capsule with viewing windows and a practical living layout.",
+    "config": "Furniture, appliances, solar PV, energy storage and water purification are available as separate options.",
+    "series": "Hospitality Series"
+  },
+  "zk-m22": {
+    "name": "Classic View Capsule",
+    "area": "22.44 sqm",
+    "dimensions": "6800×3300×3200 mm",
+    "use": "Scenic accommodation and camp guest rooms",
+    "summary": "A classic view capsule with separate living and bathroom spaces.",
+    "tagline": "A classic view capsule with separate living and bathroom spaces.",
+    "exterior": "Viewing windows and a modular capsule exterior.",
+    "interior": "A classic view capsule with separate living and bathroom spaces.",
+    "config": "Includes Midea air conditioning, an instant water heater and the specified standard bathroom fittings. Furniture, solar PV, energy storage and water purification are separate options.",
+    "series": "Hospitality Series"
+  },
+  "zk-m28": {
+    "name": "Panoramic King Bed Capsule",
+    "area": "28 sqm",
+    "dimensions": "8500×3300×3200 mm",
+    "use": "Panoramic king-bed accommodation and resort guest rooms",
+    "summary": "A panoramic view capsule arranged for a king-bed guest room.",
+    "tagline": "A panoramic view capsule arranged for a king-bed guest room.",
+    "exterior": "Viewing windows and a modular capsule exterior.",
+    "interior": "A panoramic view capsule arranged for a king-bed guest room.",
+    "config": "Includes Midea air conditioning, an instant water heater and the specified standard bathroom fittings. Furniture, solar PV, energy storage and water purification are separate options.",
+    "series": "Hospitality Series"
+  },
+  "zk-m28t": {
+    "name": "Panoramic Twin Bed Capsule",
+    "area": "",
+    "dimensions": "",
+    "use": "Twin-bed accommodation and camp guest rooms",
+    "summary": "A twin-bed room layout with panoramic views.",
+    "tagline": "A twin-bed room layout with panoramic views.",
+    "exterior": "Viewing windows and a modular capsule exterior.",
+    "interior": "A twin-bed room layout with panoramic views.",
+    "config": "Furniture, appliances, solar PV, energy storage and water purification are available as separate options.",
+    "series": "Hospitality Series"
+  },
+  "zk-m38": {
+    "name": "Family View Capsule",
+    "area": "38 sqm",
+    "dimensions": "11500×3300×3200 mm",
+    "use": "Family accommodation and resort guest rooms",
+    "summary": "An extended family view capsule with bedroom, living and bathroom areas.",
+    "tagline": "An extended family view capsule with bedroom, living and bathroom areas.",
+    "exterior": "Viewing windows and a modular capsule exterior.",
+    "interior": "An extended family view capsule with bedroom, living and bathroom areas.",
+    "config": "Includes Midea air conditioning, an instant water heater and the specified standard bathroom fittings. Furniture, solar PV, energy storage and water purification are separate options.",
+    "series": "Hospitality Series"
+  },
+  "zk-mf": {
+    "name": "Panoramic Flagship Capsule",
+    "area": "",
+    "dimensions": "",
+    "use": "Panoramic accommodation and resort spaces",
+    "summary": "Panoramic windows with bedroom and living-space planning.",
+    "tagline": "Panoramic windows with bedroom and living-space planning.",
+    "exterior": "Viewing windows and a modular capsule exterior.",
+    "interior": "Panoramic windows with bedroom and living-space planning.",
+    "config": "Furniture, appliances, solar PV, energy storage and water purification are available as separate options.",
+    "series": "Hospitality Series"
+  }
+});
+Object.assign(I18N.en.gallery, {
+  "imgZKME01": "ZK-ME Exterior illustration 01",
+  "imgZKME02": "ZK-ME Dimensioned floor plan 02",
+  "imgZKME03": "ZK-ME Top-view layout illustration 03",
+  "imgZKM2201": "ZK-M22 Exterior illustration 01",
+  "imgZKM2202": "ZK-M22 Exterior illustration 02",
+  "imgZKM2203": "ZK-M22 Exterior illustration 03",
+  "imgZKM2204": "ZK-M22 Top-view layout illustration 04",
+  "imgZKM2205": "ZK-M22 Interior illustration 05",
+  "imgZKM2206": "ZK-M22 Bathroom interior 06",
+  "imgZKM2207": "ZK-M22 Dimensioned floor plan 07",
+  "imgZKM2801": "ZK-M28 Exterior illustration 01",
+  "imgZKM2802": "ZK-M28 Exterior illustration 02",
+  "imgZKM2803": "ZK-M28 Exterior illustration 03",
+  "imgZKM2804": "ZK-M28 Top-view layout illustration 04",
+  "imgZKM2805": "ZK-M28 Interior illustration 05",
+  "imgZKM2806": "ZK-M28 Interior illustration 06",
+  "imgZKM2807": "ZK-M28 Bathroom interior 07",
+  "imgZKM28T01": "ZK-M28T Exterior illustration 01",
+  "imgZKM28T02": "ZK-M28T Exterior illustration 02",
+  "imgZKM28T03": "ZK-M28T Exterior illustration 03",
+  "imgZKM28T04": "ZK-M28T Top-view layout illustration 04",
+  "imgZKM28T05": "ZK-M28T Interior illustration 05",
+  "imgZKM28T06": "ZK-M28T Interior illustration 06",
+  "imgZKM28T07": "ZK-M28T Bathroom interior 07",
+  "imgZKM3801": "ZK-M38 Exterior illustration 01",
+  "imgZKM3802": "ZK-M38 Exterior illustration 02",
+  "imgZKM3803": "ZK-M38 Top-view layout illustration 03",
+  "imgZKM3804": "ZK-M38 Interior illustration 04",
+  "imgZKM3805": "ZK-M38 Interior illustration 05",
+  "imgZKM3806": "ZK-M38 Bathroom interior 06",
+  "imgZKM3807": "ZK-M38 Bathroom interior 07",
+  "imgZKM3808": "ZK-M38 Exterior photograph 08",
+  "imgZKMF01": "ZK-MF Exterior illustration 01",
+  "imgZKMF02": "ZK-MF Exterior illustration 02",
+  "imgZKMF03": "ZK-MF Exterior illustration 03",
+  "imgZKMF04": "ZK-MF Top-view layout illustration 04",
+  "imgZKMF05": "ZK-MF Interior illustration 05",
+  "imgZKMF06": "ZK-MF Interior illustration 06",
+  "imgZKMF07": "ZK-MF Bathroom interior 07",
+  "imgZKMF08": "ZK-MF Bathroom interior 08",
+  "imgZKMF09": "ZK-MF Interior illustration 09"
+});
+Object.assign(I18N.zh.products, {"smartSeries": "智慧太空舱系列", "filterSmart": "智慧太空舱系列", "filterHospitality": "民宿系列", "getQuote": "下载报价及配置选单", "downloadCatalog": "下载产品图集（可编辑）", "freight": "运费由买方按实际出运时运价自付，港口由买方指定。", "quoteDisclaimer": "运费由买方按实际出运时运价自付，港口由买方指定。"});
+Object.assign(I18N.zh.detail, {"area": "面积", "dimensions": "外形尺寸", "series": "产品系列", "getQuote": "下载报价及配置选单", "quoteDisclaimer": "运费由买方按实际出运时运价自付，港口由买方指定。"});
+Object.assign(I18N.en.products, {"smartSeries": "Smart Capsule Series", "filterSmart": "Smart Capsule Series", "filterHospitality": "Hospitality Series", "getQuote": "Download Quotation and Options", "downloadCatalog": "Download Editable Product Catalog", "freight": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port.", "quoteDisclaimer": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port."});
+Object.assign(I18N.en.detail, {"area": "Area", "dimensions": "External Dimensions", "series": "Product Series", "getQuote": "Download Quotation and Options", "quoteDisclaimer": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port."});
+
+Object.assign(I18N.zh.detail, {imageryDesc: '展示各型号对应的外观、内部与平面布局资料。'});
+Object.assign(I18N.en.detail, {imageryDesc: 'Model-specific exterior, interior and floor-plan media.'});
+
+I18N.zh.footer.series = "智慧太空舱 · 民宿系列";
+I18N.en.footer.series = "Smart Capsule & Hospitality Series";
+
+Object.assign(I18N.zh.products, {downloadOptions: '下载报价及配置选单（可编辑）', downloadCustomerQuote: '下载客户报价表（Excel）'});
+Object.assign(I18N.en.products, {downloadOptions: 'Download Quotation and Options (Word)', downloadCustomerQuote: 'Download Customer Quotation (Excel)'});
+
+Object.assign(I18N.zh.products, {requestQuote: "获取该型号报价"});
+Object.assign(I18N.en.products, {requestQuote: "Request a Quotation"});

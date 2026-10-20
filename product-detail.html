@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260528-2">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261020-en2">
 </head>
 <body class="ui-hybrid page-product-detail">
   <div data-site-header></div>
@@ -38,7 +38,9 @@
             <h2 id="detailModelName">基础生活舱</h2>
             <p id="detailSummary"></p>
             <div class="detail-feature-pills">
+              <span id="detailSeries"></span>
               <span id="detailArea"></span>
+              <span id="detailDimensions"></span>
               <span id="detailUse"></span>
             </div>
             <div class="detail-actions">
@@ -56,7 +58,8 @@
     <section class="section section-surface light-section">
       <div class="container">
         <div class="detail-spec-grid reveal">
-          <article class="info-tile"><h3 data-i18n="detail.area">建议面积</h3><p id="specArea"></p></article>
+          <article class="info-tile" id="specAreaTile"><h3 data-i18n="detail.area">面积</h3><p id="specArea"></p></article>
+          <article class="info-tile" id="specDimensionsTile" hidden><h3 data-i18n="detail.dimensions">外形尺寸</h3><p id="specDimensions"></p></article>
           <article class="info-tile"><h3 data-i18n="detail.use">重点应用</h3><p id="specUse"></p></article>
           <article class="info-tile"><h3 data-i18n="detail.exterior">外观定位</h3><p id="specExterior"></p></article>
           <article class="info-tile"><h3 data-i18n="detail.interior">内部功能</h3><p id="specInterior"></p></article>
@@ -72,7 +75,7 @@
     <section class="section light-section detail-visual-specs">
       <div class="container">
         <div class="detail-technical-layout">
-          <article class="technical-panel reveal">
+          <article class="technical-panel reveal" id="detailStructurePanel">
             <div class="section-header">
               <h2 class="section-title" data-i18n="detail.structureTitle">产品结构解析</h2>
               <p class="section-subtitle" data-i18n="detail.structureDesc">结构爆炸图展示舱体围护、保温、隔音和表面防护层的产品表达，具体构造以项目确认文件为准。</p>
@@ -115,10 +118,10 @@
   </main>
 
   <div data-site-footer></div>
-  <script src="assets/js/i18n.js?v=20260528-2"></script>
-  <script src="assets/js/product-data.js?v=20260528-2"></script>
-  <script src="assets/js/site-components.js?v=20260528-2"></script>
-  <script src="assets/js/main.js?v=20260528-2"></script>
+  <script src="assets/js/i18n.js?v=20261020-en2"></script>
+  <script src="assets/js/product-data.js?v=20261020-en2"></script>
+  <script src="assets/js/site-components.js?v=20261020-en2"></script>
+  <script src="assets/js/main.js?v=20261020-en2"></script>
   <script>
     (function () {
       'use strict';
@@ -133,18 +136,31 @@
         document.getElementById('detailModelCode').textContent = model.code;
         document.getElementById('detailModelName').textContent = ZK.t(model.nameKey);
         document.getElementById('detailSummary').textContent = ZK.t(model.summaryKey);
-        document.getElementById('detailArea').textContent = ZK.t(model.areaKey);
+        var isHospitality = catalog.categories.hospitality.indexOf(modelId) !== -1;
+        document.getElementById('detailStructurePanel').hidden = isHospitality;
+        document.querySelector('.detail-technical-layout').classList.toggle('single-panel', isHospitality);
+        var area = model.areaKey ? ZK.t(model.areaKey) : '';
+        var dimensions = model.dimensionsKey ? ZK.t(model.dimensionsKey) : '';
+        document.getElementById('detailSeries').textContent = ZK.t(model.seriesKey);
+        document.getElementById('detailArea').textContent = area;
+        document.getElementById('detailArea').hidden = !area;
+        document.getElementById('specAreaTile').hidden = !area;
+        document.getElementById('detailDimensions').textContent = dimensions;
+        document.getElementById('detailDimensions').hidden = !dimensions;
+        document.getElementById('specDimensions').textContent = dimensions;
+        document.getElementById('specDimensionsTile').hidden = !dimensions;
         document.getElementById('detailUse').textContent = ZK.t(model.useKey);
-        document.getElementById('specArea').textContent = ZK.t(model.areaKey);
+        document.getElementById('specArea').textContent = area;
         document.getElementById('specUse').textContent = ZK.t(model.useKey);
         document.getElementById('specExterior').textContent = ZK.t(model.exteriorKey);
         document.getElementById('specInterior').textContent = ZK.t(model.interiorKey);
         document.getElementById('specConfiguration').textContent = ZK.t(model.configKey);
         document.getElementById('detailConsultLink').href = 'contact.html?model=' + modelId;
         document.getElementById('detailZK06Link').hidden = modelId !== 'zk06';
-        document.getElementById('detailQuoteControl').innerHTML = model.quoteUrl
-          ? '<a class="btn btn-primary" download href="' + model.quoteUrl + '">' + ZK.t('detail.getQuote') + '</a>'
-          : '<button class="btn btn-primary quote-disabled" type="button" disabled>' + ZK.t(model.quoteStatusKey) + '</button>';
+        var quotationUrl = ZK.lang() === 'en' ? model.quoteUrlEn : model.quoteUrl;
+        document.getElementById('detailQuoteControl').innerHTML = quotationUrl
+          ? '<a class="btn btn-primary" download href="' + quotationUrl + '">' + ZK.t('detail.getQuote') + '</a>'
+          : '<a class="btn btn-primary" href="contact.html?model=' + modelId + '">' + ZK.t('products.requestQuote') + '</a>';
 
         var media = document.getElementById('detailHeroMedia');
         media.classList.toggle('no-image', !model.image);

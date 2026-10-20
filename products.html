@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="中科正式太空舱产品中心，查看ZK01至ZK09及ABADI型号定位与已确认影像。">
+  <meta name="description" content="中科正式太空舱产品中心，查看智慧太空舱与民宿两大系列16款型号、配置与产品图集。">
   <title>产品中心 - 中科国际 - 智慧太空舱</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260528-2">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261020-en2">
 </head>
 <body class="ui-hybrid page-products">
   <div data-site-header></div>
@@ -31,11 +31,13 @@
     <section class="section light-section catalog-section">
       <div class="container">
         <div class="section-header reveal">
-          <h2 class="section-title" data-i18n="products.lineupTitle">十型号产品矩阵</h2>
+          <h2 class="section-title" data-i18n="products.lineupTitle">十六型号产品矩阵</h2>
           <p class="section-subtitle" data-i18n="products.lineupSubtitle">按使用场景筛选产品，查看正式影像、核心定位与配置方向。</p>
         </div>
         <div class="product-filters reveal" aria-label="Product categories">
           <button type="button" class="filter-button active" data-filter="all" data-i18n="products.filterAll">全部型号</button>
+          <button type="button" class="filter-button" data-filter="smart" data-i18n="products.filterSmart">智慧太空舱系列</button>
+          <button type="button" class="filter-button" data-filter="hospitality" data-i18n="products.filterHospitality">民宿系列</button>
           <button type="button" class="filter-button" data-filter="stay" data-i18n="products.filterStay">住宿度假</button>
           <button type="button" class="filter-button" data-filter="education" data-i18n="products.filterEducation">教育展示</button>
           <button type="button" class="filter-button" data-filter="medical" data-i18n="products.filterMedical">医疗健康</button>
@@ -43,6 +45,7 @@
           <button type="button" class="filter-button" data-filter="emergency" data-i18n="products.filterEmergency">应急保障</button>
           <button type="button" class="filter-button" data-filter="custom" data-i18n="products.filterCustom">高端定制</button>
         </div>
+        <div class="catalog-download-actions reveal"><a class="btn btn-primary" download href="assets/files/中科太空舱产品图集.docx" data-download-zh="assets/files/中科太空舱产品图集.docx" data-download-en="assets/files/Zhongke-Capsule-Product-Catalog-EN.docx" data-i18n="products.downloadCatalog">下载产品图集（可编辑）</a><a class="btn btn-secondary" download href="assets/files/中科太空舱报价及配置选单.docx" data-download-zh="assets/files/中科太空舱报价及配置选单.docx" data-download-en="assets/files/Zhongke-Quotation-and-Options-EN.docx" data-i18n="products.downloadOptions">下载报价及配置选单（可编辑）</a></div>
         <div class="product-lineup-grid reveal" id="productLineupGrid"></div>
         <p class="quote-disclaimer reveal" data-i18n="products.quoteDisclaimer">页面报价单为参考资料，最终价格以双方签署的合同价格为准。</p>
       </div>
@@ -88,10 +91,10 @@
   </main>
 
   <div data-site-footer></div>
-  <script src="assets/js/i18n.js?v=20260528-2"></script>
-  <script src="assets/js/product-data.js?v=20260528-2"></script>
-  <script src="assets/js/site-components.js?v=20260528-2"></script>
-  <script src="assets/js/main.js?v=20260528-2"></script>
+  <script src="assets/js/i18n.js?v=20261020-en2"></script>
+  <script src="assets/js/product-data.js?v=20261020-en2"></script>
+  <script src="assets/js/site-components.js?v=20261020-en2"></script>
+  <script src="assets/js/main.js?v=20261020-en2"></script>
   <script>
     (function () {
       'use strict';
@@ -107,12 +110,13 @@
           var media = model.image
             ? '<div class="product-model-media"><img loading="lazy" src="' + model.image + '" alt="' + model.code + ' ' + ZK.t(model.nameKey) + '"></div>'
             : '<div class="product-model-media is-pending"><div class="media-placeholder"><span>MODEL VISUAL</span><strong>' + model.code + '</strong><small>' + ZK.t('products.noImage') + '</small></div></div>';
-          var quote = model.quoteUrl
-            ? '<a class="model-action model-action-quote" download href="' + model.quoteUrl + '">' + ZK.t('products.getQuote') + '</a>'
-            : '<button class="model-action model-action-pending" type="button" disabled>' + ZK.t(model.quoteStatusKey) + '</button>';
+          var quotationUrl = ZK.lang() === 'en' ? model.quoteUrlEn : model.quoteUrl;
+          var quote = quotationUrl
+            ? '<a class="model-action model-action-quote" download href="' + quotationUrl + '">' + ZK.t('products.getQuote') + '</a>'
+            : '<a class="model-action model-action-quote" href="contact.html?model=' + id + '">' + ZK.t('products.requestQuote') + '</a>';
           return '<article class="product-model-card' + (model.featured ? ' featured-model' : '') + '">' +
             '<a class="product-model-link" href="product-detail.html?model=' + id + '">' + media +
-            '<div class="product-model-body"><span class="model-code">' + model.code + '</span>' +
+            '<div class="product-model-body"><span class="model-series">' + ZK.t(model.seriesKey) + '</span><span class="model-code">' + model.code + '</span>' +
             '<h3>' + ZK.t(model.nameKey) + '</h3>' +
             '<p class="model-slogan">' + ZK.t(model.taglineKey) + '</p>' +
             '</div></a><div class="product-model-actions"><a class="model-action model-action-detail" href="product-detail.html?model=' + id + '">' + ZK.t('products.viewDetails') + '</a>' + quote + '</div></article>';
@@ -123,7 +127,7 @@
         var button = event.target.closest('[data-filter]');
         if (!button) return;
         activeCategory = button.getAttribute('data-filter');
-        document.querySelectorAll('.filter-button').forEach(function (item) {
+        document.querySelectorAll('.product-filters .filter-button').forEach(function (item) {
           item.classList.toggle('active', item === button);
         });
         renderCards();

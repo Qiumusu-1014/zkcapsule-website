@@ -6606,3 +6606,11 @@ textarea:focus-visible {
     padding: 28px 22px;
   }
 }
+
+/* Unified product registry: established smart capsules plus hospitality models. */
+.catalog-download-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 28px; }
+.model-series { display: block; margin-bottom: 7px; color: #53657e; font-size: .78rem; font-weight: 600; letter-spacing: .03em; }
+.detail-feature-pills [hidden], .detail-spec-grid [hidden] { display: none !important; }
+
+.detail-technical-layout > [hidden] { display: none !important; }
+.detail-technical-layout.single-panel { grid-template-columns: minmax(0, 1fr); }

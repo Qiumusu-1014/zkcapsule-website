@@ -49,6 +49,11 @@
       }
     });
 
+    // Match editable downloads to the selected page language.
+    document.querySelectorAll('[data-download-zh][data-download-en]').forEach(function (el) {
+      el.href = el.getAttribute(currentLang === 'en' ? 'data-download-en' : 'data-download-zh');
+    });
+
     // Update placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
       const key = el.getAttribute('data-i18n-placeholder');
