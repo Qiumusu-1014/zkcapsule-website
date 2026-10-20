@@ -30,7 +30,7 @@ Company product showcase website for Zhongke International Consultants (Hong Kon
 
 ## Notes
 
-This is a static bilingual website built with HTML, CSS, and JavaScript. Chinese and English editable Word catalogs and quotation/options documents are available on Products and Product Media. Download links follow the selected page language. The published quotation covers ZK-M22, ZK-M28 and ZK-M38; other models link to a model-specific inquiry. Public downloads contain customer-facing prices only. Freight is paid directly by the buyer at the shipment-date rate, and the buyer specifies the port. Blank dimensions and areas are not inferred from model codes. Existing product images remain assigned to their original models; the separate Hospitality Series reuses the branded product media.
+This is a static bilingual website built with HTML, CSS, and JavaScript. Chinese and English editable Word hospitality catalogs and quotation/options documents are available on Products and Product Media. The catalog follows the supplied six-category document: Compact, Classic View, Double Bed, Twin Bed, Family View and Panoramic Flagship. Download links follow the selected page language. The published quotation covers ZK-M22, ZK-M28 and ZK-M38; other models link to a model-specific inquiry. Public downloads contain customer-facing prices only. Freight is paid directly by the buyer at the shipment-date rate, and the buyer specifies the port. Blank dimensions and areas are not inferred from model codes. Existing product images remain assigned to their original models; the separate Hospitality Series reuses the branded product media.
 
 ## Production Hosting
 

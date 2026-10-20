@@ -958,14 +958,14 @@ Object.assign(I18N.en.models, {
     "series": "Hospitality Series"
   },
   "zk-m28": {
-    "name": "Panoramic King Bed Capsule",
+    "name": "Panoramic Double Bed Capsule",
     "area": "28 sqm",
     "dimensions": "8500×3300×3200 mm",
-    "use": "Panoramic king-bed accommodation and resort guest rooms",
-    "summary": "A panoramic view capsule arranged for a king-bed guest room.",
-    "tagline": "A panoramic view capsule arranged for a king-bed guest room.",
+    "use": "Panoramic double-bed accommodation and resort guest rooms",
+    "summary": "A panoramic view capsule arranged for a double-bed guest room.",
+    "tagline": "A panoramic view capsule arranged for a double-bed guest room.",
     "exterior": "Viewing windows and a modular capsule exterior.",
-    "interior": "A panoramic view capsule arranged for a king-bed guest room.",
+    "interior": "A panoramic view capsule arranged for a double-bed guest room.",
     "config": "Includes Midea air conditioning, an instant water heater and the specified standard bathroom fittings. Furniture, solar PV, energy storage and water purification are separate options.",
     "series": "Hospitality Series"
   },
@@ -1049,9 +1049,9 @@ Object.assign(I18N.en.gallery, {
   "imgZKMF08": "ZK-MF Bathroom interior 08",
   "imgZKMF09": "ZK-MF Interior illustration 09"
 });
-Object.assign(I18N.zh.products, {"smartSeries": "智慧太空舱系列", "filterSmart": "智慧太空舱系列", "filterHospitality": "民宿系列", "getQuote": "下载报价及配置选单", "downloadCatalog": "下载产品图集（可编辑）", "freight": "运费由买方按实际出运时运价自付，港口由买方指定。", "quoteDisclaimer": "运费由买方按实际出运时运价自付，港口由买方指定。"});
+Object.assign(I18N.zh.products, {"smartSeries": "智慧太空舱系列", "filterSmart": "智慧太空舱系列", "filterHospitality": "民宿系列", "getQuote": "下载报价及配置选单", "downloadCatalog": "下载民宿产品图集（可编辑）", "freight": "运费由买方按实际出运时运价自付，港口由买方指定。", "quoteDisclaimer": "运费由买方按实际出运时运价自付，港口由买方指定。"});
 Object.assign(I18N.zh.detail, {"area": "面积", "dimensions": "外形尺寸", "series": "产品系列", "getQuote": "下载报价及配置选单", "quoteDisclaimer": "运费由买方按实际出运时运价自付，港口由买方指定。"});
-Object.assign(I18N.en.products, {"smartSeries": "Smart Capsule Series", "filterSmart": "Smart Capsule Series", "filterHospitality": "Hospitality Series", "getQuote": "Download Quotation and Options", "downloadCatalog": "Download Editable Product Catalog", "freight": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port.", "quoteDisclaimer": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port."});
+Object.assign(I18N.en.products, {"smartSeries": "Smart Capsule Series", "filterSmart": "Smart Capsule Series", "filterHospitality": "Hospitality Series", "getQuote": "Download Quotation and Options", "downloadCatalog": "Download Hospitality Product Catalog", "freight": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port.", "quoteDisclaimer": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port."});
 Object.assign(I18N.en.detail, {"area": "Area", "dimensions": "External Dimensions", "series": "Product Series", "getQuote": "Download Quotation and Options", "quoteDisclaimer": "Freight is paid directly by the buyer at the shipment-date rate. The buyer specifies the port."});
 
 Object.assign(I18N.zh.detail, {imageryDesc: '展示各型号对应的外观、内部与平面布局资料。'});
