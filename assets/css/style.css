@@ -6614,3 +6614,7 @@ textarea:focus-visible {
 
 .detail-technical-layout > [hidden] { display: none !important; }
 .detail-technical-layout.single-panel { grid-template-columns: minmax(0, 1fr); }
+
+/* Let translated category labels keep their natural width. */
+.product-filters { flex-wrap: wrap; justify-content: center; gap: 6px; }
+.product-filters .filter-button { flex: 0 1 auto; min-width: max-content; padding-right: 14px; padding-left: 14px; }
