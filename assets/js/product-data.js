@@ -955,8 +955,8 @@
     var model = catalog.items[id];
     model.seriesKey = model.seriesKey || 'products.smartSeries';
     var hasPublishedQuotation = ['ZK-M22', 'ZK-M28', 'ZK-M38'].indexOf(model.code) !== -1;
-    model.quoteUrl = hasPublishedQuotation ? 'assets/files/中科太空舱报价及配置选单.docx' : '';
-    model.quoteUrlEn = hasPublishedQuotation ? 'assets/files/Zhongke-Quotation-and-Options-EN.docx' : '';
+    model.quoteUrl = hasPublishedQuotation ? 'assets/files/中科太空舱报价及配置选单.docx?v=20261021-pv' : '';
+    model.quoteUrlEn = hasPublishedQuotation ? 'assets/files/Zhongke-Quotation-and-Options-EN.docx?v=20261021-pv' : '';
   });
 
 })();
